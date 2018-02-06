@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Anand's Blog</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://AnandNautiyal23.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io" />
-<updated>2018-02-06T23:04:11+05:30</updated>
-<id>http://AnandNautiyal23.github.io/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2018-02-06T23:28:51+05:30</updated>
+<id>http://localhost:4000/</id>
 <author>
-  <name>Indrajith Indraprastham</name>
-  <uri>http://AnandNautiyal23.github.io/</uri>
+  <name>Anand Nautiyal</name>
+  <uri>http://localhost:4000/</uri>
   <email>mail@indrajith.me</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Machine Learning Aproach to Classify Music Based on Genre]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/blog/machine-learning-pproach-to-classify-music-based-on-genre/" />
-  <id>http://AnandNautiyal23.github.io/blog/machine-learning-pproach-to-classify-music-based-on-genre</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/" />
+  <id>http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre</id>
   <published>2017-07-29T11:58:29+05:30</published>
   <updated>2017-07-29T11:58:29+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -282,20 +282,20 @@ For some songs we can say that it has feature of multiple genres. So we have als
 &lt;h1 id=&quot;license&quot;&gt;License&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/indrajithi/mgc-django&quot;&gt;Source&lt;/a&gt; GPL v2.0, MIT. See LICENSE.txt&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/blog/machine-learning-pproach-to-classify-music-based-on-genre/&quot;&gt;Machine Learning Aproach to Classify Music Based on Genre&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on July 29, 2017.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/&quot;&gt;Machine Learning Aproach to Classify Music Based on Genre&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on July 29, 2017.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 4]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/" />
-  <id>http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/" />
+  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4</id>
   <published>2016-05-26T14:12:04+05:30</published>
   <updated>2016-05-26T14:12:04+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -463,20 +463,20 @@ kiss_fft130/kiss_fft.c  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 4&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 4&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 3]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/" />
-  <id>http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/" />
+  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3</id>
   <published>2016-05-26T12:59:15+05:30</published>
   <updated>2016-05-26T12:59:15+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -663,20 +663,20 @@ until the &lt;code class=&quot;highlighter-rouge&quot;&gt;framePointer &amp;lt; 
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 3&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 3&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 2]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/" />
-  <id>http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/" />
+  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2</id>
   <published>2016-05-25T21:57:36+05:30</published>
   <updated>2016-05-25T21:57:36+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -918,20 +918,20 @@ points in to the array. &lt;code class=&quot;highlighter-rouge&quot;&gt;music.pl
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 2&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 2&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 1]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-1/" />
-  <id>http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-1</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/" />
+  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1</id>
   <published>2016-05-25T21:01:43+05:30</published>
   <updated>2016-05-25T21:01:43+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -1063,20 +1063,20 @@ To run the project:
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-1/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 1&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 1&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Jumble Words solver using Python.]]></title>
-  <link rel="alternate" type="text/html" href="http://AnandNautiyal23.github.io/jumble_words_solver_in_python/" />
-  <id>http://AnandNautiyal23.github.io/jumble_words_solver_in_python</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/jumble_words_solver_in_python/" />
+  <id>http://localhost:4000/jumble_words_solver_in_python</id>
   <published>2016-04-15T18:54:48+05:30</published>
   <updated>2016-04-15T18:54:48+05:30</updated>
   <author>
-    <name>Indrajith Indraprastham</name>
-    <uri>http://AnandNautiyal23.github.io</uri>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
@@ -1163,7 +1163,7 @@ To run the project:
  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://AnandNautiyal23.github.io/jumble_words_solver_in_python/&quot;&gt;Jumble Words solver using Python.&lt;/a&gt; was originally published by Indrajith Indraprastham at &lt;a href=&quot;http://AnandNautiyal23.github.io&quot;&gt;Anand's Blog&lt;/a&gt; on April 15, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jumble_words_solver_in_python/&quot;&gt;Jumble Words solver using Python.&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on April 15, 2016.&lt;/p&gt;
   </content>
 </entry>
 

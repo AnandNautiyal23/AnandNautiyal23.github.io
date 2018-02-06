@@ -12,10 +12,7 @@ image:
 
 ### Inventory Level Optimization — *Predictive model building.*
 
-Demand forecasting for an E-commerce shop with over 1 Million products. 
-
-Analyzed large inventory datasets. Determined the rate of change and the movement of products in the inventory. 
-Build statistical and machine learning models using historical data to forecast demand and optimize inventory levels. 
+Demand ABC DEF XYZ.... NLANF 
 
 
 ## OPEN SOURCE PROJECTS
