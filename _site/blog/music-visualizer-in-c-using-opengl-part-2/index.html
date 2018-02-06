@@ -1,0 +1,464 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Music Visualizer in C++ Using OpenGL Part 2 &#8211; Anand's Blog</title>
+<meta name="description" content="Now I assume that you have installed all the requirements needed for the visualizer. 
+If not read Part 1.
+
+">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Music Visualizer in C++ Using OpenGL Part 2">
+<meta name="twitter:description" content="Now I assume that you have installed all the requirements needed for the visualizer. 
+If not read Part 1.
+
+">
+<meta name="twitter:site" content="@indrajithtweet">
+<meta name="twitter:creator" content="@indrajithtweet">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://AnandNautiyal23.github.io/images/matrix-logo-2.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Music Visualizer in C++ Using OpenGL Part 2">
+<meta property="og:description" content="Now I assume that you have installed all the requirements needed for the visualizer. 
+If not read Part 1.
+
+">
+<meta property="og:url" content="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/">
+<meta property="og:site_name" content="Anand's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/">
+<link href="http://AnandNautiyal23.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Anand's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://AnandNautiyal23.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://AnandNautiyal23.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/" >Home</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/portfolio/" >Portfolio</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/resume/" >Resume</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://AnandNautiyal23.github.io/" class="site-logo" rel="home" title="Anand's Blog"><img src="http://AnandNautiyal23.github.io/images/matrix-logo-2.png" width="200" height="200" alt="Anand's Blog logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://AnandNautiyal23.github.io/">Anand's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">My Experiments With Computer.</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">Music Visualizer in C++ Using OpenGL Part 2</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://AnandNautiyal23.github.io/images/bio.jpg" class="bio-photo" alt="Indrajith Indraprastham bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Indrajith Indraprastham</span></span>
+        <span class="entry-date date published"><time datetime="2016-05-25T21:57:36+05:30"><i class="fa fa-calendar-o"></i> May 25, 2016</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>Now I assume that you have installed all the requirements needed for the visualizer. 
+If not read <strong><a href="/blog/music-visualizer-in-c-using-opengl-part-1/">Part 1</a></strong>.</p>
+
+<p>We are using the graph from <strong><a href="https://en.wikibooks.org/wiki/OpenGL_Programming/Scientific_OpenGL_Tutorial_02">OpenGL Programming/Scientific OpenGL Tutorial 02</a></strong> for plotting the spectrum. Full source code for the graph is available <a href="https://gitlab.com/wikibooks-opengl/modern-tutorials/tree/master/graph02">here</a>.</p>
+
+<p>Lets create a file <code class="highlighter-rouge">draw.cpp</code> and add a <code class="highlighter-rouge">main</code> function. We pass <code class="highlighter-rouge">.wav</code> file as an argument.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> 
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Usage: wave_iteration &lt;FILENAME&gt;"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span></code></pre></figure>
+
+<p>To play the music we are using <strong>SFML</strong>. So lets write code for that.
+Before that we need to create an object <code class="highlighter-rouge">sf::Music music;</code>. Add it to the global part.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"> <span class="c1">//sfm play music
+</span>
+ 	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">music</span><span class="p">.</span><span class="n">openFromFile</span><span class="p">(</span><span class="n">fileName</span><span class="p">))</span>
+       		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> 
+ 
+ <span class="c1">// find the total music duration
+</span> 	<span class="n">totalMusicDuration</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getDuration</span> <span class="p">();</span></code></pre></figure>
+
+<p>Initializing the OpenGL. See this <a href="https://en.wikibooks.org/wiki/OpenGL_Programming/Scientific_OpenGL_Tutorial_02">tutorial</a> for better understanding the graph used here.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">	<span class="n">glutInit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+	<span class="n">glutInitDisplayMode</span><span class="p">(</span><span class="n">GLUT_RGB</span><span class="p">);</span>
+	<span class="n">glutInitWindowSize</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">);</span>
+	<span class="n">glutCreateWindow</span><span class="p">(</span><span class="s">"My Graph"</span><span class="p">);</span>
+
+	<span class="n">GLenum</span> <span class="n">glew_status</span> <span class="o">=</span> <span class="n">glewInit</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">GLEW_OK</span> <span class="o">!=</span> <span class="n">glew_status</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Error: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">glewGetErrorString</span><span class="p">(</span><span class="n">glew_status</span><span class="p">));</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">GLEW_VERSION_2_0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"No support for OpenGL 2.0 found</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">GLint</span> <span class="n">max_units</span><span class="p">;</span>
+
+	<span class="n">glGetIntegerv</span><span class="p">(</span><span class="n">GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">max_units</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">max_units</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Your GPU does not have any vertex texture image units</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">GLfloat</span> <span class="n">range</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+
+	<span class="n">glGetFloatv</span><span class="p">(</span><span class="n">GL_ALIASED_POINT_SIZE_RANGE</span><span class="p">,</span> <span class="n">range</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">)</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"WARNING: point sprite range (%f, %f) too small</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">range</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+	</code></pre></figure>
+
+<p>Now we need to get the points to plot. <code class="highlighter-rouge">getData()</code> is the function we fetch to get N/2 
+points in to the array. <code class="highlighter-rouge">music.play()</code> plays the music been loaded.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">	<span class="n">getData</span><span class="p">();</span>
+
+	<span class="n">music</span><span class="p">.</span><span class="n">play</span><span class="p">();</span></code></pre></figure>
+
+<p>Now lets call some OpenGL function to plot the spectrum.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">if</span> <span class="p">(</span><span class="n">init_resources</span><span class="p">())</span> <span class="p">{</span>
+
+		<span class="n">glutDisplayFunc</span><span class="p">(</span><span class="n">display</span><span class="p">);</span>
+		<span class="n">glutSpecialFunc</span><span class="p">(</span><span class="n">special</span><span class="p">);</span>
+		<span class="n">glutIdleFunc</span><span class="p">(</span><span class="n">moveWav</span><span class="p">);</span>
+		<span class="n">glutKeyboardFunc</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+		<span class="n">glutMainLoop</span><span class="p">();</span>
+	<span class="p">}</span>
+
+	<span class="n">free_resources</span><span class="p">();</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Create a file <code class="highlighter-rouge">visualizer.hpp</code> and add the following codes.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+#include &lt;GL/glew.h&gt;
+#include &lt;GL/glut.h&gt;
+#include "common/shader_utils.h"
+#include &lt;SFML/Audio.hpp&gt;
+#include "aquila/source/WaveFile.h"
+#include &lt;iostream&gt;
+#include &lt;functional&gt;
+#include &lt;memory&gt;
+#include &lt;chrono&gt;
+#include &lt;thread&gt;
+#include &lt;string.h&gt;
+#include &lt;sys/time.h&gt;
+</span><span class="c1">//kissFFT
+</span><span class="cp">#include "kiss_fft130/kiss_fft.h"
+#ifndef M_PI
+#define M_PI 3.14159265358979324
+#endif</span></code></pre></figure>
+
+<p>This completes the <code class="highlighter-rouge">main</code> function. Here is the complete code for the function.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="cp">#include "visualizer.hpp"
+</span>
+<span class="cp">#define N 10000
+</span>
+<span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">timestamp_t</span><span class="p">;</span>
+  <span class="k">static</span> <span class="n">timestamp_t</span>
+    <span class="nf">get_timestamp</span> <span class="p">()</span>
+    <span class="p">{</span>
+      <span class="k">struct</span> <span class="n">timeval</span> <span class="n">now</span><span class="p">;</span>
+      <span class="n">gettimeofday</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+      <span class="k">return</span>  <span class="n">now</span><span class="p">.</span><span class="n">tv_usec</span> <span class="o">+</span> <span class="p">(</span><span class="n">timestamp_t</span><span class="p">)</span><span class="n">now</span><span class="p">.</span><span class="n">tv_sec</span> <span class="o">*</span> <span class="mi">1000000</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="n">GLuint</span> <span class="n">program</span><span class="p">;</span>
+<span class="n">GLint</span> <span class="n">attribute_coord1d</span><span class="p">;</span>
+<span class="n">GLint</span> <span class="n">uniform_offset_x</span><span class="p">;</span>
+<span class="n">GLint</span> <span class="n">uniform_scale_x</span><span class="p">;</span>
+<span class="n">GLuint</span> <span class="n">texture_id</span><span class="p">;</span>
+<span class="n">GLint</span> <span class="n">uniform_mytexture</span><span class="p">;</span>
+
+<span class="kt">float</span> <span class="n">offset_x</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">scale_x</span> <span class="o">=</span><span class="mf">1.0</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">interpolate</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">clamp</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">showpoints</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+
+<span class="n">GLuint</span> <span class="n">vbo</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">graph</span><span class="p">[</span><span class="n">N</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span> 
+<span class="kt">int</span> <span class="n">framePointer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">fileName</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+<span class="n">bool</span> <span class="n">calledFromInit</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">dataEnd</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">playFlag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="n">bool</span> <span class="n">muteFlag</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+
+<span class="n">sf</span><span class="o">::</span><span class="n">Time</span> <span class="n">totalMusicDuration</span><span class="p">;</span>
+<span class="n">sf</span><span class="o">::</span><span class="n">Time</span> <span class="n">timePlay</span><span class="p">;</span>
+<span class="n">sf</span><span class="o">::</span><span class="n">Music</span> <span class="n">music</span><span class="p">;</span>
+<span class="n">sf</span><span class="o">::</span><span class="n">Time</span> <span class="n">timePlay</span><span class="p">;</span>
+
+<span class="n">kiss_fft_cpx</span> <span class="n">in</span><span class="p">[</span><span class="n">N</span><span class="p">],</span><span class="n">out</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+
+<span class="n">timestamp_t</span> <span class="n">tmain</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="n">getData</span><span class="p">();</span>
+<span class="kt">void</span> <span class="n">display</span><span class="p">();</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> 
+<span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Usage: wave_iteration &lt;FILENAME&gt;"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">fileName</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+	<span class="n">tmain</span> <span class="o">=</span> <span class="n">get_timestamp</span><span class="p">();</span>
+   <span class="c1">//sfm play music
+</span> 	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">music</span><span class="p">.</span><span class="n">openFromFile</span><span class="p">(</span><span class="n">fileName</span><span class="p">))</span>
+       		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> 
+
+
+	<span class="n">totalMusicDuration</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getDuration</span> <span class="p">();</span>
+
+	<span class="n">glutInit</span><span class="p">(</span><span class="o">&amp;</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+	<span class="n">glutInitDisplayMode</span><span class="p">(</span><span class="n">GLUT_RGB</span><span class="p">);</span>
+	<span class="n">glutInitWindowSize</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">);</span>
+	<span class="n">glutCreateWindow</span><span class="p">(</span><span class="s">"My Graph"</span><span class="p">);</span>
+
+	<span class="n">GLenum</span> <span class="n">glew_status</span> <span class="o">=</span> <span class="n">glewInit</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">GLEW_OK</span> <span class="o">!=</span> <span class="n">glew_status</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Error: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">glewGetErrorString</span><span class="p">(</span><span class="n">glew_status</span><span class="p">));</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">GLEW_VERSION_2_0</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"No support for OpenGL 2.0 found</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">GLint</span> <span class="n">max_units</span><span class="p">;</span>
+
+	<span class="n">glGetIntegerv</span><span class="p">(</span><span class="n">GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">max_units</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">max_units</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Your GPU does not have any vertex texture image units</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+		<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="n">GLfloat</span> <span class="n">range</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+
+	<span class="n">glGetFloatv</span><span class="p">(</span><span class="n">GL_ALIASED_POINT_SIZE_RANGE</span><span class="p">,</span> <span class="n">range</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">range</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">)</span>
+		<span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"WARNING: point sprite range (%f, %f) too small</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">range</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+	
+	
+	<span class="n">printf</span><span class="p">(</span><span class="s">"------------------------------------------------------</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Use left/right to move horizontally.And seek audio by +/-5 sec</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Use up/down to change the horizontal scale.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press home to reset the position and scale.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press F7 to toggle interpolation.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press F8 to toggle clamping.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press F9 to toggle drawing points.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press q to exit.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press p to toggle Play/Pause audio.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Press r to reload and play audio.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"------------------------------------------------------</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+
+	
+	<span class="n">getData</span><span class="p">();</span>
+
+	<span class="n">music</span><span class="p">.</span><span class="n">play</span><span class="p">();</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">init_resources</span><span class="p">())</span> <span class="p">{</span>
+
+		<span class="n">glutDisplayFunc</span><span class="p">(</span><span class="n">display</span><span class="p">);</span>
+		<span class="n">glutSpecialFunc</span><span class="p">(</span><span class="n">special</span><span class="p">);</span>
+		<span class="n">glutIdleFunc</span><span class="p">(</span><span class="n">moveWav</span><span class="p">);</span>
+		<span class="n">glutKeyboardFunc</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+		<span class="n">glutMainLoop</span><span class="p">();</span>
+	<span class="p">}</span>
+
+	<span class="n">free_resources</span><span class="p">();</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><strong><a href="/blog/music-visualizer-in-c-using-opengl-part-3/">» Part 3</a></strong></p>
+
+<p><strong><a href="https://github.com/indrajithi/Audio-Visualizer">Full Source Code.</a></strong></p>
+
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'indrajith'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-1/" class="btn" title="Music Visualizer in C++ Using OpenGL Part 1">Previous</a>
+      
+      
+        <a href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/" class="btn" title="Music Visualizer in C++ Using OpenGL Part 3">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span><img src="https://mirrors.creativecommons.org/presskit/icons/cc.large.png" style="width:20px;height:20px;"> 2018  Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll.</a> </span>
+<div class="social-icons">
+	<a href="https://twitter.com/indrajithtweet" title="Indrajith Indraprastham on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="https://facebook.com/indrajithi" title="Indrajith Indraprastham on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="https://linkedin.com/in/indrajith-indraprastham/" title="Indrajith Indraprastham on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://stackoverflow.com/users/2337276/indrajith" title="Indrajith Indraprastham on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	<a href="https://instagram.com/indrajith_indraprastham" title="Indrajith Indraprastham on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/indrajithi" title="Indrajith Indraprastham on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://AnandNautiyal23.github.io/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://AnandNautiyal23.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://AnandNautiyal23.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://AnandNautiyal23.github.io/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>

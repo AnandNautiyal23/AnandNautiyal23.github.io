@@ -1,0 +1,103 @@
+[
+
+  
+    {
+      "title"			: "Machine Learning Aproach to Classify Music Based on Genre",
+      "link"			: "http://AnandNautiyal23.github.io/blog/machine-learning-pproach-to-classify-music-based-on-genre/",
+      "excerpt"		: "Create a web app in Django to classify music based on genre."
+    }
+  
+
+  
+    ,{
+      "title"			: "Music Visualizer in C++ Using OpenGL Part 4",
+      "link"			: "http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/",
+      "excerpt"		: "We use display() function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points into the graph[]."
+    }
+  
+
+  
+    ,{
+      "title"			: "Music Visualizer in C++ Using OpenGL Part 3",
+      "link"			: "http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/",
+      "excerpt"		: "We have to initialize the resources for OpenGL to plot the spectrum."
+    }
+  
+
+  
+    ,{
+      "title"			: "Music Visualizer in C++ Using OpenGL Part 2",
+      "link"			: "http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/",
+      "excerpt"		: "Now I assume that you have installed all the requirements needed for the visualizer. If not read Part 1."
+    }
+  
+
+  
+    ,{
+      "title"			: "Music Visualizer in C++ Using OpenGL Part 1",
+      "link"			: "http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-1/",
+      "excerpt"		: "For the given input audio file (.wav) the program will give the real time audio spectrum by performing Fast Fourier Transform (FFT) on the audio samples and plot the graph using OpenGL."
+    }
+  
+
+  
+    ,{
+      "title"			: "Jumble Words solver using Python.",
+      "link"			: "http://AnandNautiyal23.github.io/jumble_words_solver_in_python/",
+      "excerpt"		: "Python CTI program that gives all the possible match for the given word."
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "http://AnandNautiyal23.github.io/theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About Me",
+      "link"			: "http://AnandNautiyal23.github.io/about/",
+      "excerpt"		: "About Me"
+    }
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Portfolio",
+      "link"			: "http://AnandNautiyal23.github.io/portfolio/",
+      "excerpt"		: "About Me"
+    }
+  
+
+  
+    ,{
+      "title"			: "Resume",
+      "link"			: "http://AnandNautiyal23.github.io/resume/",
+      "excerpt"		: "Resume Indrajith Indraprastham"
+    }
+  
+
+  
+
+]

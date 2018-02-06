@@ -1,0 +1,390 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Music Visualizer in C++ Using OpenGL Part 4 &#8211; Anand's Blog</title>
+<meta name="description" content="We use display() function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points 
+into the graph[].
+
+">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Music Visualizer in C++ Using OpenGL Part 4">
+<meta name="twitter:description" content="We use display() function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points 
+into the graph[].
+
+">
+<meta name="twitter:site" content="@indrajithtweet">
+<meta name="twitter:creator" content="@indrajithtweet">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://AnandNautiyal23.github.io/images/matrix-logo-2.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Music Visualizer in C++ Using OpenGL Part 4">
+<meta property="og:description" content="We use display() function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points 
+into the graph[].
+
+">
+<meta property="og:url" content="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/">
+<meta property="og:site_name" content="Anand's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/">
+<link href="http://AnandNautiyal23.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Anand's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://AnandNautiyal23.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://AnandNautiyal23.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/" >Home</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/portfolio/" >Portfolio</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/resume/" >Resume</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://AnandNautiyal23.github.io/" class="site-logo" rel="home" title="Anand's Blog"><img src="http://AnandNautiyal23.github.io/images/matrix-logo-2.png" width="200" height="200" alt="Anand's Blog logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://AnandNautiyal23.github.io/">Anand's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">My Experiments With Computer.</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">Music Visualizer in C++ Using OpenGL Part 4</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://AnandNautiyal23.github.io/images/bio.jpg" class="bio-photo" alt="Indrajith Indraprastham bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Indrajith Indraprastham</span></span>
+        <span class="entry-date date published"><time datetime="2016-05-26T14:12:04+05:30"><i class="fa fa-calendar-o"></i> May 26, 2016</time></span>
+        
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>We use <code class="highlighter-rouge">display()</code> function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points 
+into the <code class="highlighter-rouge">graph[]</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">display</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">glUseProgram</span><span class="p">(</span><span class="n">program</span><span class="p">);</span>
+	<span class="n">glUniform1i</span><span class="p">(</span><span class="n">uniform_mytexture</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+	<span class="n">glUniform1f</span><span class="p">(</span><span class="n">uniform_offset_x</span><span class="p">,</span> <span class="n">offset_x</span><span class="p">);</span>
+	<span class="n">glUniform1f</span><span class="p">(</span><span class="n">uniform_scale_x</span><span class="p">,</span> <span class="n">scale_x</span><span class="p">);</span>
+
+	<span class="n">glClearColor</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">);</span>
+	<span class="n">glClear</span><span class="p">(</span><span class="n">GL_COLOR_BUFFER_BIT</span><span class="p">);</span>
+
+	<span class="cm">/* Set texture wrapping mode */</span>
+	<span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL_TEXTURE_WRAP_S</span><span class="p">,</span> <span class="n">clamp</span> <span class="o">?</span> <span class="n">GL_CLAMP_TO_EDGE</span> <span class="o">:</span> <span class="n">GL_REPEAT</span><span class="p">);</span>
+
+	<span class="cm">/* Set texture interpolation mode */</span>
+	<span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL_TEXTURE_MIN_FILTER</span><span class="p">,</span> <span class="n">interpolate</span> <span class="o">?</span> <span class="n">GL_LINEAR</span> <span class="o">:</span> <span class="n">GL_NEAREST</span><span class="p">);</span>
+	<span class="n">glTexParameteri</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">GL_TEXTURE_MAG_FILTER</span><span class="p">,</span> <span class="n">interpolate</span> <span class="o">?</span> <span class="n">GL_LINEAR</span> <span class="o">:</span> <span class="n">GL_NEAREST</span><span class="p">);</span>
+
+	<span class="cm">/* Draw using the vertices in our vertex buffer object */</span>
+	<span class="n">glBindBuffer</span><span class="p">(</span><span class="n">GL_ARRAY_BUFFER</span><span class="p">,</span> <span class="n">vbo</span><span class="p">);</span>
+
+	<span class="n">glEnableVertexAttribArray</span><span class="p">(</span><span class="n">attribute_coord1d</span><span class="p">);</span>
+	<span class="n">glVertexAttribPointer</span><span class="p">(</span><span class="n">attribute_coord1d</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">GL_FLOAT</span><span class="p">,</span> <span class="n">GL_FALSE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+	<span class="cm">/* Draw the line */</span>
+	<span class="n">glDrawArrays</span><span class="p">(</span><span class="n">GL_LINE_STRIP</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">101</span><span class="p">);</span>
+
+	<span class="cm">/* Draw points as well, if requested */</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">showpoints</span><span class="p">)</span>
+		<span class="n">glDrawArrays</span><span class="p">(</span><span class="n">GL_POINTS</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">101</span><span class="p">);</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="n">checkEnd</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+		
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="n">dataEnd</span> <span class="o">!=</span> <span class="nb">true</span><span class="p">){</span>
+		<span class="n">getData</span><span class="p">();</span>
+		<span class="n">glFlush</span><span class="p">();</span>
+	<span class="n">glutSwapBuffers</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="k">else</span> <span class="k">return</span><span class="p">;</span>
+
+	
+<span class="p">}</span></code></pre></figure>
+
+<p><code class="highlighter-rouge">glutSpecialFunc(special)</code> calles the <code class="highlighter-rouge">void special(int key, int x, int y)</code> function which is used to get the
+input F7,F8,F9 to toggle interpolation, clamping, and show points.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">special</span><span class="p">(</span><span class="kt">int</span> <span class="n">key</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="kt">float</span> <span class="n">t</span><span class="p">;</span>
+	<span class="k">switch</span> <span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_F7</span><span class="p">:</span>
+		<span class="n">interpolate</span> <span class="o">=</span> <span class="o">!</span><span class="n">interpolate</span><span class="p">;</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Interpolation is now %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">interpolate</span> <span class="o">?</span> <span class="s">"on"</span> <span class="o">:</span> <span class="s">"off"</span><span class="p">);</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_F8</span><span class="p">:</span>
+		<span class="n">clamp</span> <span class="o">=</span> <span class="o">!</span><span class="n">clamp</span><span class="p">;</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Clamping is now %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">clamp</span> <span class="o">?</span> <span class="s">"on"</span> <span class="o">:</span> <span class="s">"off"</span><span class="p">);</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_F9</span><span class="p">:</span>
+		<span class="n">showpoints</span> <span class="o">=</span> <span class="o">!</span><span class="n">showpoints</span><span class="p">;</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Showing points is now %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">showpoints</span> <span class="o">?</span> <span class="s">"on"</span> <span class="o">:</span> <span class="s">"off"</span><span class="p">);</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_LEFT</span><span class="p">:</span>
+		<span class="n">offset_x</span> <span class="o">-=</span> <span class="mf">0.1</span><span class="p">;</span>
+		<span class="n">timePlay</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getPlayingOffset</span><span class="p">();</span>
+		<span class="n">t</span> <span class="o">=</span> <span class="n">timePlay</span><span class="p">.</span><span class="n">asSeconds</span><span class="p">();</span> 
+		<span class="n">music</span><span class="p">.</span><span class="n">setPlayingOffset</span><span class="p">(</span><span class="n">sf</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="mi">5</span><span class="p">));</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_RIGHT</span><span class="p">:</span>
+		<span class="n">offset_x</span> <span class="o">+=</span> <span class="mf">0.1</span><span class="p">;</span>
+		<span class="n">timePlay</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getPlayingOffset</span><span class="p">();</span>
+		<span class="n">t</span> <span class="o">=</span> <span class="n">timePlay</span><span class="p">.</span><span class="n">asSeconds</span><span class="p">();</span> 
+		<span class="n">music</span><span class="p">.</span><span class="n">setPlayingOffset</span><span class="p">(</span><span class="n">sf</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="n">t</span> <span class="o">+</span> <span class="mi">5</span><span class="p">));</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_UP</span><span class="p">:</span>
+		<span class="n">scale_x</span> <span class="o">*=</span> <span class="mf">1.5</span><span class="p">;</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_DOWN</span><span class="p">:</span>
+		<span class="n">scale_x</span> <span class="o">/=</span> <span class="mf">1.5</span><span class="p">;</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_HOME</span><span class="p">:</span>
+		<span class="n">offset_x</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+		<span class="n">scale_x</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
+		<span class="k">break</span><span class="p">;</span>
+	<span class="k">case</span> <span class="n">GLUT_KEY_F10</span><span class="p">:</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+
+	<span class="p">}</span>
+
+	<span class="n">glutPostRedisplay</span><span class="p">();</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>We also use <code class="highlighter-rouge">glutKeyboardFunc(key)</code> to get keyboard input. You can combine the above function with this if you want. 
+For the sake of simplicity I have used another function <code class="highlighter-rouge">key()</code> to get keyboard input.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">key</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">k</span><span class="p">,</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="p">)</span>
+<span class="p">{</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">==</span> <span class="sc">'p'</span><span class="p">){</span>
+		
+		<span class="k">if</span><span class="p">(</span><span class="n">playFlag</span><span class="p">){</span>
+			<span class="n">music</span><span class="p">.</span><span class="n">pause</span><span class="p">();</span>
+			<span class="n">playFlag</span> <span class="o">=</span> <span class="o">!</span><span class="n">playFlag</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="n">music</span><span class="p">.</span><span class="n">play</span><span class="p">();</span>
+			<span class="n">playFlag</span> <span class="o">=</span> <span class="o">!</span><span class="n">playFlag</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	
+	<span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">==</span> <span class="sc">'m'</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">muteFlag</span><span class="p">){</span>
+			<span class="n">music</span><span class="p">.</span><span class="n">setVolume</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+			<span class="n">muteFlag</span><span class="o">=!</span><span class="n">muteFlag</span><span class="p">;</span>
+		<span class="p">}</span>
+		<span class="k">else</span><span class="p">{</span>
+			<span class="n">music</span><span class="p">.</span><span class="n">setVolume</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+			<span class="n">muteFlag</span><span class="o">=!</span><span class="n">muteFlag</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">==</span> <span class="sc">'r'</span><span class="p">)</span><span class="c1">//reload audio	
+</span>		<span class="n">music</span><span class="p">.</span><span class="n">setPlayingOffset</span><span class="p">(</span><span class="n">sf</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">==</span> <span class="sc">'q'</span><span class="p">)</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<p>OpenGL have a function called <code class="highlighter-rouge">glutIdleFunc()</code> which loops and doesnot effect the display() function.
+We are creating a new function called <code class="highlighter-rouge">moveWav()</code> to loop untill all the samples are fetched. This basically 
+calls <code class="highlighter-rouge">getData()</code> and <code class="highlighter-rouge">display()</code>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">moveWav</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">getData</span><span class="p">();</span>
+	<span class="n">display</span><span class="p">();</span>
+	<span class="n">glFlush</span><span class="p">();</span>
+	<span class="n">glutSwapBuffers</span><span class="p">();</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="compiling-and-running">Compiling and running</h2>
+
+<p>Create a file called <code class="highlighter-rouge">compile</code> and add the following content.<code class="highlighter-rouge">mylib/lib</code> is where aquila library is build.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+g++ -std<span class="o">=</span>c++11 -c draw.cpp 
+g++ -std<span class="o">=</span>gnu++11 draw.o  <span class="se">\</span>
+kiss_fft130/kiss_fft.c  <span class="se">\</span>
+-L /home/&lt;username&gt;/mylib/lib/ <span class="se">\</span>
+-lAquila -lOoura_fft -lm <span class="se">\</span>
+-lglut -lGLEW -lGL -lGLU  <span class="se">\</span>
+-lfreetype -lsfml-system <span class="se">\</span>
+-lsfml-audio  ./common/shader_utils.o <span class="se">\</span>
+-o draw</code></pre></figure>
+
+<p>After compiling type <code class="highlighter-rouge">./draw &lt;audio&gt;</code> to run the visualizer.</p>
+
+<p><strong><a href="https://github.com/indrajithi/Audio-Visualizer">Full Source Code.</a></strong></p>
+
+        
+          <div id="disqus_thread"></div><!-- /#disqus_thread -->
+          
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'indrajith'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/" class="btn" title="Music Visualizer in C++ Using OpenGL Part 3">Previous</a>
+      
+      
+        <a href="http://AnandNautiyal23.github.io/blog/machine-learning-pproach-to-classify-music-based-on-genre/" class="btn" title="Machine Learning Aproach to Classify Music Based on Genre">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span><img src="https://mirrors.creativecommons.org/presskit/icons/cc.large.png" style="width:20px;height:20px;"> 2018  Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll.</a> </span>
+<div class="social-icons">
+	<a href="https://twitter.com/indrajithtweet" title="Indrajith Indraprastham on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	<a href="https://facebook.com/indrajithi" title="Indrajith Indraprastham on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="https://linkedin.com/in/indrajith-indraprastham/" title="Indrajith Indraprastham on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://stackoverflow.com/users/2337276/indrajith" title="Indrajith Indraprastham on StackExchange" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>
+	<a href="https://instagram.com/indrajith_indraprastham" title="Indrajith Indraprastham on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/indrajithi" title="Indrajith Indraprastham on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://AnandNautiyal23.github.io/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://AnandNautiyal23.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://AnandNautiyal23.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://AnandNautiyal23.github.io/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
