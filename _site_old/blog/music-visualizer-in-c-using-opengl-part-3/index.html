@@ -1,0 +1,381 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Music Visualizer in C++ Using OpenGL Part 3 &#8211; Anand's Blog</title>
+<meta name="description" content="We have to initialize the resources for OpenGL to plot the spectrum.
+
+">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Music Visualizer in C++ Using OpenGL Part 3">
+<meta name="twitter:description" content="We have to initialize the resources for OpenGL to plot the spectrum.
+
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://AnandNautiyal23.github.io/images/Anand.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Music Visualizer in C++ Using OpenGL Part 3">
+<meta property="og:description" content="We have to initialize the resources for OpenGL to plot the spectrum.
+
+">
+<meta property="og:url" content="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/">
+<meta property="og:site_name" content="Anand's Blog">
+
+
+
+
+
+<link rel="canonical" href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-3/">
+<link href="http://AnandNautiyal23.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Anand's Blog Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://AnandNautiyal23.github.io/assets/css/main.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://AnandNautiyal23.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://AnandNautiyal23.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://AnandNautiyal23.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://AnandNautiyal23.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/" >Home</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/portfolio/" >Portfolio</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/resume/" >Resume</a></li>
+		  
+		    
+		    <li><a href="http://AnandNautiyal23.github.io/about/" >About</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<header class="masthead">
+	<div class="wrap">
+      
+  		<a href="http://AnandNautiyal23.github.io/" class="site-logo" rel="home" title="Anand's Blog"><img src="http://AnandNautiyal23.github.io/images/Anand.jpg" width="200" height="200" alt="Anand's Blog logo" class="animated fadeInDown"></a>
+      
+      <h1 class="site-title animated fadeIn"><a href="http://AnandNautiyal23.github.io/">Anand's Blog</a></h1>
+		<h2 class="site-description animated fadeIn" itemprop="description">My Experiments With Computer.</h2>
+	</div>
+</header><!-- /.masthead -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <ul class="entry-tags">
+          
+        </ul>
+        
+          <h1 class="entry-title">Music Visualizer in C++ Using OpenGL Part 3</h1>
+        
+      </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="http://AnandNautiyal23.github.io/images/Anand.jpg" class="bio-photo" alt="Anand Nautiyal bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Anand Nautiyal</span></span>
+        <span class="entry-date date published"><time datetime="2016-05-26T12:59:15+05:30"><i class="fa fa-calendar-o"></i> May 26, 2016</time></span>
+        
+        
+        
+        
+      </footer>
+      <div class="entry-content">
+        <p>We have to initialize the resources for OpenGL to plot the spectrum.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">int</span> <span class="nf">init_resources</span><span class="p">()</span> <span class="p">{</span>
+
+	<span class="n">timestamp_t</span> <span class="n">t0</span> <span class="o">=</span> <span class="n">get_timestamp</span><span class="p">();</span>
+	<span class="n">program</span> <span class="o">=</span> <span class="n">create_program</span><span class="p">(</span><span class="s">"graph.v.glsl"</span><span class="p">,</span> <span class="s">"graph.f.glsl"</span><span class="p">);</span>
+	<span class="k">if</span> <span class="p">(</span><span class="n">program</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+
+	<span class="n">attribute_coord1d</span> <span class="o">=</span> <span class="n">get_attrib</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="s">"coord1d"</span><span class="p">);</span>
+	<span class="n">uniform_offset_x</span> <span class="o">=</span> <span class="n">get_uniform</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="s">"offset_x"</span><span class="p">);</span>
+	<span class="n">uniform_scale_x</span> <span class="o">=</span> <span class="n">get_uniform</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="s">"scale_x"</span><span class="p">);</span>
+	<span class="n">uniform_mytexture</span> <span class="o">=</span> <span class="n">get_uniform</span><span class="p">(</span><span class="n">program</span><span class="p">,</span> <span class="s">"mytexture"</span><span class="p">);</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="n">attribute_coord1d</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="o">||</span> <span class="n">uniform_offset_x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="o">||</span> <span class="n">uniform_scale_x</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="o">||</span> <span class="n">uniform_mytexture</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+		<span class="k">return</span> <span class="mi">0</span><span class="p">;</span> 
+
+	<span class="c1">//gets N/2 values in to graph
+</span>	<span class="n">getData</span><span class="p">();</span>
+	<span class="n">calledFromInit</span> <span class="o">=</span> <span class="o">!</span><span class="n">calledFromInit</span><span class="p">;</span>
+	<span class="cm">/* Upload the texture with our datapoints */</span>
+	<span class="n">glActiveTexture</span><span class="p">(</span><span class="n">GL_TEXTURE0</span><span class="p">);</span>
+	<span class="n">glGenTextures</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">texture_id</span><span class="p">);</span>
+	<span class="n">glBindTexture</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="n">texture_id</span><span class="p">);</span>
+	<span class="n">glTexImage2D</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_LUMINANCE</span><span class="p">,</span> <span class="mi">2048</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_LUMINANCE</span><span class="p">,</span> <span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span> <span class="n">graph</span><span class="p">);</span>
+
+	<span class="c1">// Create the vertex buffer object
+</span>	<span class="n">glGenBuffers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vbo</span><span class="p">);</span>
+	<span class="n">glBindBuffer</span><span class="p">(</span><span class="n">GL_ARRAY_BUFFER</span><span class="p">,</span> <span class="n">vbo</span><span class="p">);</span>
+
+	<span class="c1">// Create an array with only x values.
+</span>	<span class="n">GLfloat</span> <span class="n">line</span><span class="p">[</span><span class="mi">101</span><span class="p">];</span>
+
+	<span class="c1">// Fill it in just like an array
+</span>	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">101</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">line</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">50</span><span class="p">)</span> <span class="o">/</span> <span class="mf">50.0</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Tell OpenGL to copy our array to the buffer object
+</span>	<span class="n">glBufferData</span><span class="p">(</span><span class="n">GL_ARRAY_BUFFER</span><span class="p">,</span> <span class="k">sizeof</span> <span class="n">line</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">GL_STATIC_DRAW</span><span class="p">);</span>
+
+	<span class="c1">// Enable point size control in vertex shader
+</span><span class="cp">#ifndef GL_ES_VERSION_2_0
+</span>	<span class="n">glEnable</span><span class="p">(</span><span class="n">GL_VERTEX_PROGRAM_POINT_SIZE</span><span class="p">);</span>
+<span class="cp">#endif
+</span>
+	<span class="c1">//return 1;
+</span>
+	<span class="n">timestamp_t</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">get_timestamp</span><span class="p">();</span>
+	<span class="kt">double</span> <span class="n">secs</span> <span class="o">=</span> <span class="p">(</span><span class="n">t1</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000000.0</span><span class="n">L</span><span class="p">;</span>
+	<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"iinit init_resources total time: "</span><span class="o">&lt;&lt;</span><span class="n">secs</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><code class="highlighter-rouge">getFft()</code> is the function we use to apply <em>FFT</em>. Lets create that function.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">getFft</span><span class="p">(</span><span class="k">const</span> <span class="n">kiss_fft_cpx</span> <span class="n">in</span><span class="p">[</span><span class="n">N</span><span class="p">],</span> <span class="n">kiss_fft_cpx</span> <span class="n">out</span><span class="p">[</span><span class="n">N</span><span class="p">])</span>
+<span class="p">{</span>
+  <span class="n">kiss_fft_cfg</span> <span class="n">cfg</span><span class="p">;</span>
+
+ 
+
+  <span class="k">if</span> <span class="p">((</span><span class="n">cfg</span> <span class="o">=</span> <span class="n">kiss_fft_alloc</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="mi">0</span><span class="cm">/*is_inverse_fft*/</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="kt">size_t</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="n">kiss_fft</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">in</span><span class="p">,</span> <span class="n">out</span><span class="p">);</span>
+    <span class="n">free</span><span class="p">(</span><span class="n">cfg</span><span class="p">);</span>
+
+   <span class="p">}</span> 
+  <span class="k">else</span>
+  <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"not enough memory?</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<p>Now lets create <code class="highlighter-rouge">getData()</code> function which does all the work of getting N samples, applying window function,
+applying FFT and storing in an array <code class="highlighter-rouge">graph</code> so that OpenGL can plot the points. <code class="highlighter-rouge">timestamp_t t0</code> gets the current time. This will be useful to find the total execution time.</p>
+
+<p>Input audio name is stored as <code class="highlighter-rouge">fileName</code> to open it using <em>Aquila</em> with the name we use <code class="highlighter-rouge">Aquila::WaveFile wav(fileName);</code> . <code class="highlighter-rouge">mag[N/2]</code> stores the magnitude values after applying FFT. <code class="highlighter-rouge">roof</code> stores the total samples count.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="kt">void</span> <span class="nf">getData</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">x</span><span class="p">;</span>
+
+	<span class="n">timestamp_t</span> <span class="n">t0</span> <span class="o">=</span> <span class="n">get_timestamp</span><span class="p">();</span>
+	
+	<span class="n">Aquila</span><span class="o">::</span><span class="n">WaveFile</span> <span class="n">wav</span><span class="p">(</span><span class="n">fileName</span><span class="p">);</span>
+	<span class="kt">double</span> <span class="n">mag</span><span class="p">[</span><span class="n">N</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span>
+	<span class="kt">double</span> <span class="n">roof</span> <span class="o">=</span> <span class="n">wav</span><span class="p">.</span><span class="n">getSamplesCount</span><span class="p">();</span></code></pre></figure>
+
+<p>Lets collect N samples from the audio input. Initialize <code class="highlighter-rouge">i = framePointer</code> and <code class="highlighter-rouge">j = 0</code>. Initially <code class="highlighter-rouge">framePointer</code> value is zero. We will update the <code class="highlighter-rouge">framePointer</code> when one frame is fetched. Iterate the loop to take <code class="highlighter-rouge">N</code> samplings
+until the <code class="highlighter-rouge">framePointer &lt; roof -N</code>. Note that <code class="highlighter-rouge">roof</code> is the total sample count. <code class="highlighter-rouge">in[i].r</code> is the real part and <code class="highlighter-rouge">in[j].i</code> is the imaginary part. Since we don’t have any imaginary part in the samples we will set the imaginary part of the input to zero.</p>
+
+<p>Apply Window Function on the input. We are using <strong><a href="https://en.wikipedia.org/wiki/Hann_function">Hann Window</a></strong> function on the input.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="c1">//Get first N samples
+</span>	<span class="k">for</span><span class="p">(</span> <span class="n">i</span> <span class="o">=</span> <span class="n">framePointer</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">framePointer</span> <span class="o">+</span> <span class="n">N</span><span class="p">)</span>
+					<span class="o">&amp;&amp;</span> <span class="n">framePointer</span> <span class="o">&lt;</span> <span class="n">roof</span> <span class="o">-</span> <span class="n">N</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">,</span><span class="n">j</span><span class="o">++</span>  <span class="p">){</span>
+
+		<span class="c1">//Apply window function on the sample
+</span>		<span class="kt">double</span> <span class="n">multiplier</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">*</span><span class="n">j</span><span class="o">/</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)));</span>
+		<span class="n">in</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">r</span> <span class="o">=</span> <span class="n">multiplier</span> <span class="o">*</span> <span class="n">wav</span><span class="p">.</span><span class="n">sample</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+		<span class="n">in</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">//stores N samples 
+</span>	<span class="p">}</span>
+	</code></pre></figure>
+
+<p>Update the frame pointer if <code class="highlighter-rouge">framePointer &lt; roof-N -1</code>. Else print the values and exit.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">if</span><span class="p">(</span><span class="n">framePointer</span> <span class="o">&lt;</span> <span class="n">roof</span><span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+		<span class="n">framePointer</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+
+	<span class="p">}</span>
+	<span class="k">else</span> <span class="p">{</span>
+		
+		<span class="n">timestamp_t</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">get_timestamp</span><span class="p">();</span>
+		<span class="kt">double</span> <span class="n">secs</span> <span class="o">=</span> <span class="p">(</span><span class="n">t1</span> <span class="o">-</span> <span class="n">tmain</span><span class="p">)</span> <span class="o">/</span> <span class="mf">1000000.0</span><span class="n">L</span><span class="p">;</span>
+
+		<span class="n">sf</span><span class="o">::</span><span class="n">Time</span> <span class="n">musicPlayingOffset</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getPlayingOffset</span><span class="p">();</span>
+		
+		<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">musicSampleRate</span> <span class="o">=</span> <span class="n">music</span><span class="p">.</span><span class="n">getSampleRate</span><span class="p">();</span>
+
+		<span class="kt">int</span> <span class="n">musicLeftToPlay</span> <span class="o">=</span> <span class="n">totalMusicDuration</span><span class="p">.</span><span class="n">asMilliseconds</span><span class="p">()</span> <span class="o">-</span> <span class="n">musicPlayingOffset</span><span class="p">.</span><span class="n">asMilliseconds</span><span class="p">();</span>
+
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"N = "</span><span class="o">&lt;&lt;</span><span class="n">N</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Frame pointer &gt; roof - N"</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Framepointer = "</span><span class="o">&lt;&lt;</span><span class="n">framePointer</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Frames Left = "</span><span class="o">&lt;&lt;</span><span class="n">roof</span> <span class="o">-</span> <span class="n">framePointer</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Total exec time: "</span><span class="o">&lt;&lt;</span><span class="n">secs</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Total Music Played Duration = "</span><span class="o">&lt;&lt;</span><span class="n">musicPlayingOffset</span><span class="p">.</span><span class="n">asMilliseconds</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Music left to play = "</span><span class="o">&lt;&lt;</span><span class="n">musicLeftToPlay</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+		<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"SFML Sample Rate = "</span><span class="o">&lt;&lt;</span><span class="n">musicSampleRate</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>  
+		
+		<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="p">}</span></code></pre></figure>
+
+<p>Now we have N samples with us, we need to apply <em>FFT</em> on the samples. <code class="highlighter-rouge">getFft()</code> is the function that we created to apply <em>FFT</em>.  We then calculate magnitude of first n/2 FFT and store in <code class="highlighter-rouge">mag[N/2]</code>. Optionally you can convert it into dB scale by <code class="highlighter-rouge">10 * log10(mag)</code>. Log magnitude values are stored in <code class="highlighter-rouge">graph[]</code> to plot the points.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++">	<span class="n">getFft</span><span class="p">(</span><span class="n">in</span><span class="p">,</span><span class="n">out</span><span class="p">);</span>
+
+	<span class="c1">// calculate magnitude of first n/2 FFT
+</span>	<span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span> <span class="p">){</span>
+		<span class="n">mag</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">((</span><span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">r</span> <span class="o">*</span> <span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">r</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">i</span> <span class="o">*</span> <span class="n">out</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">i</span><span class="p">));</span>
+	
+		<span class="c1">//	x =   10 * log10(mag[i]) ;
+</span>	
+		<span class="n">graph</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">mag</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">*</span><span class="mi">10</span><span class="p">;</span>	
+	<span class="p">}</span></code></pre></figure>
+
+<p>Now we can plot the points in <code class="highlighter-rouge">graph[]</code> which we generated using OpenGL.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">calledFromInit</span><span class="p">)</span>
+	<span class="p">{</span>
+	
+	<span class="n">glTexImage2D</span><span class="p">(</span><span class="n">GL_TEXTURE_2D</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_LUMINANCE</span><span class="p">,</span> <span class="mi">2048</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">GL_LUMINANCE</span><span class="p">,</span> <span class="n">GL_UNSIGNED_BYTE</span><span class="p">,</span> <span class="n">graph</span><span class="p">);</span>
+
+	<span class="c1">// Create the vertex buffer object
+</span>	<span class="n">glGenBuffers</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">vbo</span><span class="p">);</span>
+	<span class="n">glBindBuffer</span><span class="p">(</span><span class="n">GL_ARRAY_BUFFER</span><span class="p">,</span> <span class="n">vbo</span><span class="p">);</span>
+
+	<span class="c1">// Create an array with only x values.
+</span>	<span class="n">GLfloat</span> <span class="n">line</span><span class="p">[</span><span class="mi">101</span><span class="p">];</span>
+
+	<span class="c1">// Fill it in just like an array
+</span>	<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">101</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">line</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">50</span><span class="p">)</span> <span class="o">/</span> <span class="mf">50.0</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// Tell OpenGL to copy our array to the buffer object
+</span>	<span class="n">glBufferData</span><span class="p">(</span><span class="n">GL_ARRAY_BUFFER</span><span class="p">,</span> <span class="k">sizeof</span> <span class="n">line</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">GL_STATIC_DRAW</span><span class="p">);</span>
+
+	<span class="c1">// Enable point size control in vertex shader
+</span><span class="cp">#ifndef GL_ES_VERSION_2_0
+</span>	<span class="n">glEnable</span><span class="p">(</span><span class="n">GL_VERTEX_PROGRAM_POINT_SIZE</span><span class="p">);</span>
+<span class="cp">#endif
+</span>	<span class="p">}</span> </code></pre></figure>
+
+<p><strong><a href="/blog/music-visualizer-in-c-using-opengl-part-4/">Part 4</a></strong></p>
+
+<p><strong><a href="https://github.com/indrajithi/Audio-Visualizer">Full Source Code.</a></strong></p>
+
+        
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-2/" class="btn" title="Music Visualizer in C++ Using OpenGL Part 2">Previous</a>
+      
+      
+        <a href="http://AnandNautiyal23.github.io/blog/music-visualizer-in-c-using-opengl-part-4/" class="btn" title="Music Visualizer in C++ Using OpenGL Part 4">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+<span><img src="https://mirrors.creativecommons.org/presskit/icons/cc.large.png" style="width:20px;height:20px;"> 2018  Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll.</a> </span>
+<div class="social-icons">
+	
+	<a href="https://facebook.com/anandnautiyal123" title="Anand Nautiyal on Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+	
+	<a href="https://linkedin.com/in/anand-nautiyal-76227b7/" title="Anand Nautiyal on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	
+	<a href="https://instagram.com/anand_23" title="Anand Nautiyal on Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+	
+	<a href="https://github.com/AnandNautiyal23" title="Anand Nautiyal on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+	
+  
+	
+  <a href="http://AnandNautiyal23.github.io/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+</div><!-- /.social-icons -->
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://AnandNautiyal23.github.io';
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://AnandNautiyal23.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://AnandNautiyal23.github.io/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
