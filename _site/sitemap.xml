@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/</loc>
+<loc>http://localhost:4000/blog/An_e_commerce_application/</loc>
+<lastmod>2017-12-29T11:58:29+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/Time_efficient_Disvovery_of_-moving_object_groups_from_Trajectory_data/</loc>
 <lastmod>2017-07-29T11:58:29+05:30</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/</loc>
-<lastmod>2016-05-26T14:12:04+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/</loc>
-<lastmod>2016-05-26T12:59:15+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/</loc>
-<lastmod>2016-05-25T21:57:36+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/</loc>
-<lastmod>2016-05-25T21:01:43+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/jumble_words_solver_in_python/</loc>
-<lastmod>2016-04-15T18:54:48+05:30</lastmod>
+<loc>http://localhost:4000/Machine_Learning_Algorithms_for_Recommender_System_a_comparative_analysis/</loc>
+<lastmod>2017-04-15T18:54:48+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>

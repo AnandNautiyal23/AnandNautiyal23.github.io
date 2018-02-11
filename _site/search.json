@@ -2,49 +2,25 @@
 
   
     {
-      "title"			: "Machine Learning Aproach to Classify Music Based on Genre",
-      "link"			: "http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/",
-      "excerpt"		: "Create a web app in Django to classify music based on genre."
+      "title"			: "An E-commerce application for aftermarket auto parts",
+      "link"			: "http://localhost:4000/blog/An_e_commerce_application/",
+      "excerpt"		: "Analysing the data of an e-commerce application"
     }
   
 
   
     ,{
-      "title"			: "Music Visualizer in C++ Using OpenGL Part 4",
-      "link"			: "http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/",
-      "excerpt"		: "We use display() function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points into the graph[]."
+      "title"			: "Time efficient Disvovery of moving object groups from Trajectory data",
+      "link"			: "http://localhost:4000/blog/Time_efficient_Disvovery_of_-moving_object_groups_from_Trajectory_data/",
+      "excerpt"		: "Improving time-efficiency of travelling companion approach"
     }
   
 
   
     ,{
-      "title"			: "Music Visualizer in C++ Using OpenGL Part 3",
-      "link"			: "http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/",
-      "excerpt"		: "We have to initialize the resources for OpenGL to plot the spectrum."
-    }
-  
-
-  
-    ,{
-      "title"			: "Music Visualizer in C++ Using OpenGL Part 2",
-      "link"			: "http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/",
-      "excerpt"		: "Now I assume that you have installed all the requirements needed for the visualizer. If not read Part 1."
-    }
-  
-
-  
-    ,{
-      "title"			: "Music Visualizer in C++ Using OpenGL Part 1",
-      "link"			: "http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/",
-      "excerpt"		: "For the given input audio file (.wav) the program will give the real time audio spectrum by performing Fast Fourier Transform (FFT) on the audio samples and plot the graph using OpenGL."
-    }
-  
-
-  
-    ,{
-      "title"			: "Jumble Words solver using Python.",
-      "link"			: "http://localhost:4000/jumble_words_solver_in_python/",
-      "excerpt"		: "Python CTI program that gives all the possible match for the given word."
+      "title"			: "Machine Learning Algorithms for Recommender System - a comparative analysis",
+      "link"			: "http://localhost:4000/Machine_Learning_Algorithms_for_Recommender_System_a_comparative_analysis/",
+      "excerpt"		: "An analysis of the hotshot machine learning algorithms"
     }
   
 
@@ -94,7 +70,7 @@
     ,{
       "title"			: "Resume",
       "link"			: "http://localhost:4000/resume/",
-      "excerpt"		: "Resume Indrajith Indraprastham"
+      "excerpt"		: "Anand Nautiyal"
     }
   
 

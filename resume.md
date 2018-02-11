@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resume 
-excerpt: "Resume Indrajith Indraprastham"
+excerpt: "Anand Nautiyal"
 date: 
 modified:
 image:
@@ -18,9 +18,6 @@ image:
 
 
 <div class="center">
-<h3>Available formats</h3>
-<a markdown="0" href="https://github.com/indrajithi/indrajithi.github.io/raw/master/resume/resume_indrajith.pdf" class="btn">PDF</a>
-<a markdown="0" href="https://github.com/indrajithi/indrajithi.github.io/raw/master/resume/resume_indrajith.odt" class="btn">ODT</a>
-<a markdown="0" href="https://github.com/indrajithi/indrajithi.github.io/raw/master/resume/resume_indrajith.docx" class="btn">DOCX</a>
-<a markdown="0" href="https://github.com/indrajithi/indrajithi.github.io/raw/master/resume/resume_indrajith.zip" class="btn">HTML</a>
+<h3>View Resume</h3>
+<a markdown="0" href="https://github.com/AnandNautiyal23.me/Resume/blob/master/resume.pdf" class="btn">PDF</a>
 </div>

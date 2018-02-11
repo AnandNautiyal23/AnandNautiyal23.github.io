@@ -10,41 +10,31 @@ image:
 ---
 ## PROJECTS
 
-### Inventory Level Optimization — *Predictive model building.*
+### Autoparts E-commerce Application
+Data Scientist - Spineor, Mohali
 
-Demand ABC DEF XYZ.... NLANF 
+April 2017 - Present
 
+As a Data Scientist, I deal with huge data each day. The major tasks involve analysing the raw data, developing models, processing it accordingly and extracting the meaningful and requisite information out of it. We work with technologies like Apache Spark, Scala, Python, etc. 
 
-## OPEN SOURCE PROJECTS
+## Datastax Graph database representation
+Data Scientist - Spineor, Mohali
 
-### [Music Genre Classification App](https://github.com/indrajithi/mgc-django)  — *A Webapp to classify music based on genres.* 
+August 2017 - October 2017
 
-
-
-![mgc-django](https://raw.githubusercontent.com/indrajithi/mgc-django/master/img.jpg)
-<br><br>
-**This project was featured on Github Trending for Python language.** 
-
-Used various machine learning classification algorithms like logistic regression, Nearest Neighbor, Support Vector Machine to classify music based on genres. Made a web app using Python, Django and AngularJS. 
+I was involved in modeling the data to form a graph database and traversed it using Gremlin query language.
 
 
-### [Time-Spark](https://github.com/indrajithi/time-spark) — *A python package for time series analysis in Spark*
-![Time Spark](https://raw.githubusercontent.com/indrajithi/time-spark/master/plt.png)
+### [Time Efficient Discovery of Moving Object Groups from Trajectory Data — *Time Series Data* ](https://drive.google.com/file/d/1VmQewe5SKgn56XOdFrUkQXgnupyRv4Mx/view?usp=sharing)   
 
-### [Music Genre Classification](https://github.com/indrajithi/mgc-python) — *A Python package*
-Developed a python package for music genre classification. This package contains modules for `feature extraction`, classification using `Support Vector Machine`, `cross validation`, `best-combination` and modules for finding `accuracy`. 
+We improved the efficiency of travelling Companion framework (a kind of moving object groups). We clustered trajectory data using grid-based clustering having O(nlogn) time complexity which was a huge improvement over traditional DBSCAN which has a time complexity of O(n^2). We used the GEOLIFE Taxi dataset for our experiments. The coding part was done completely in Java. We also published a research paper out of it. Follow the link to read my paper : [Time Efficient Discovery of Moving Object Groups from Trajectory Data](https://drive.google.com/file/d/1VmQewe5SKgn56XOdFrUkQXgnupyRv4Mx/view?usp=sharing)
 
 
-### [Audio Spectrum Visualizer in OpenGL](https://github.com/indrajithi/Audio-Visualizer) — *Real time audio power spectrum using OpenGL.*
+### [Machine Learning Algorithms for Recommender System - a comparative Analysis](http://ijcat.com/archives/volume6/issue2/ijcatr06021005.pdf) 
 
-![audio spectrum visualizer](https://raw.githubusercontent.com/indrajithi/Audio-Visualizer/master/spectrum.gif)
-<br><br>
-**This project was featured on Github Trending for C language.**
+We implemented several machine learning algorithms like K-means clustering, Naive Bayes, K-nearest neighbour, Content based filtering, Collaborative filtering, etc. All these algorithms were implemented and thoroughly analysed using MovieLens dataset. The major algorithms include Decision Tree, K- mean clustering, Naive Bayes, Content Based Filtering and Collaborative based Filtering. The coding was done in C and Java. We got it published in International Journal of Computer Applications Technology & Research Volume 6, Issue 2, 97-100, 2017, ISSN 2319 − 8656. You can read the paper at this link : [Machine Learning Algorithms for Recommender System - a comparative Analysis](http://ijcat.com/archives/volume6/issue2/ijcatr06021005.pdf) 
 
-Used Fast Fourier transform to generate the power spectrum of an audio and visualize it in real time using OpenGL.
-
-### [Anagram Solver App](https://github.com/indrajithi/Jumble-words-Solver-using-webapp2) — *A web app written in Python to solve scrambled words.*
-
-### [Sudoku Solver in C++](https://github.com/indrajithi/SUDOKU)  — *A simple command line Sudoku Solver*
+### Discernibility matrix Construction & Johnson's Reduct — *A Rough Computing Project*
+This project involved the construction of discernibility matrix using Johnson's Reduct method. The project was tested on wine and car dataset available at UCI Machine Learning Repository.
 
  <a markdown="0" href="http://indrajith.me/resume" class="btn">Resume</a>

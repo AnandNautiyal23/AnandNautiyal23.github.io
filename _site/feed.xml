@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2018-02-06T23:28:51+05:30</updated>
+<updated>2018-02-11T14:56:39+05:30</updated>
 <id>http://localhost:4000/</id>
 <author>
   <name>Anand Nautiyal</name>
@@ -14,9 +14,77 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Machine Learning Aproach to Classify Music Based on Genre]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/" />
-  <id>http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre</id>
+  <title type="html"><![CDATA[An E-commerce application for aftermarket auto parts]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/An_e_commerce_application/" />
+  <id>http://localhost:4000/blog/An_e_commerce_application</id>
+  <published>2017-12-29T11:58:29+05:30</published>
+  <updated>2017-12-29T11:58:29+05:30</updated>
+  <author>
+    <name>Anand Nautiyal</name>
+    <uri>http://localhost:4000</uri>
+    <email>mail@indrajith.me</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;auto-parts-shop---an-e-commerce-application&quot;&gt;Auto Parts Shop - An E-commerce application&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/data-engineering.png&quot; alt=&quot;DataEngineering&quot; title=&quot;DataEngineering&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#apachespark&quot;&gt;Apache_Spark&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Auto Parts Application is an an E-commerce project which deals in plethora of Aftermarket products of several vehicles. It is huge project with several teams working on it. We are supplied with raw data in various formats and we have to analyse it and make it into the desired forms.
+It can involve working on Apache Spark, Scala or working it out in Python.&lt;/p&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Apache Spark (2.1.0)&lt;/li&gt;
+  &lt;li&gt;Java (1.8)&lt;/li&gt;
+  &lt;li&gt;Scala (2.11)&lt;/li&gt;
+  &lt;li&gt;Sbt (0.13.1)&lt;/li&gt;
+  &lt;li&gt;RAM (&amp;gt;= 8 GB)&lt;/li&gt;
+  &lt;li&gt;Processor (&amp;gt;= 2 Ghz)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install default-jdk&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install scala&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install git&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tar xvf spark-2.0.2-bin-hadoop2.7.tgz&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd spark-2.0.2-bin-hadoop2.7.tgz&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd bin&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./spark-shell&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;apachespark&quot;&gt;Apache_Spark&lt;/h2&gt;
+
+&lt;p&gt;If the present computing is to be analysed, data computing stands out of the crowd. Data lies at the core of the Internet era. Alongwith the product itself, a business relies a lot on the analysis of the data trends to make the product better and more wanted. And, it is a magical world out there when you see data talking to you and telling you the obvious.&lt;/p&gt;
+
+&lt;p&gt;There are several tools out there for data computing. However, Apache Spark has gained a lot of popularity because of its ease to work with. It makes thing easier than hadoop. The major flaw with hadoop was the hectic process of writing out dataframes frequently after applying an operation on it. While, in spark, a series of operations can be performed on the dataframes and writing it out at the end of all the operations.&lt;/p&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+
+&lt;p&gt;Our project involves raw data files which are unstructured. They contain a lot of scattered information which needs to be mined out for describing our product better. A single sku carries plenty of information in the form of files. All this information needs to be fetched from these files by applying various operations, as deemed necessary. The raw data, once processed acts as the source of information about that sku when it is viewed online.&lt;/p&gt;
+
+&lt;p&gt;The major task is to maintain the catalogue. The catalogue once live, needs to be analysed based on the sale trend. Then recommendation system sets it foot in. Recommendation models are used on the fetched data and better recommendations are provided to the client.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/An_e_commerce_application/&quot;&gt;An E-commerce application for aftermarket auto parts&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on December 29, 2017.&lt;/p&gt;
+  </content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Time efficient Disvovery of moving object groups from Trajectory data]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/Time_efficient_Disvovery_of_-moving_object_groups_from_Trajectory_data/" />
+  <id>http://localhost:4000/blog/Time_efficient_Disvovery_of_ moving_object_groups_from_Trajectory_data</id>
   <published>2017-07-29T11:58:29+05:30</published>
   <updated>2017-07-29T11:58:29+05:30</updated>
   <author>
@@ -25,1145 +93,260 @@
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
-    &lt;h1 id=&quot;music-genre-classifier&quot;&gt;Music Genre Classifier&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/img.jpg&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;demohttpsgenreclassifierherokuappcom&quot;&gt;&lt;a href=&quot;https://genreclassifier.herokuapp.com/&quot;&gt;Demo&lt;/a&gt;&lt;/h3&gt;
+    &lt;h1 id=&quot;travelling-companion-problem&quot;&gt;Travelling Companion Problem&lt;/h1&gt;
 
 &lt;h3 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#music-genre-classifier-app&quot;&gt;Music Genre Classifier App&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#architecture&quot;&gt;Architecture&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#flow-chart&quot;&gt;Flow Chart&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#prototype&quot;&gt;Prototype&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#feature-extraction&quot;&gt;Feature Extraction&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#principal-component-analysis&quot;&gt;Principal Component Analysis.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#dimensionality-reduction&quot;&gt;Dimensionality reduction&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#classification&quot;&gt;Classification&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#k-nearest-neighbors-knn&quot;&gt;K-nearest neighbors (KNN)&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#logistic-regression&quot;&gt;Logistic Regression&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#python-package-mysvm&quot;&gt;Python package mysvm&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#feature&quot;&gt;&lt;em&gt;feature&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#svm&quot;&gt;&lt;em&gt;svm&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#acc&quot;&gt;&lt;em&gt;acc&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#relatedwork&quot;&gt;Related_Work&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#problemdefinition&quot;&gt;Problem_Definition&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#algorithms&quot;&gt;Algorithms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#experiments&quot;&gt;Experiments&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#results&quot;&gt;Results&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#license&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Music is categorized into subjective categories called genres. With the growth of the internet and multimedia systems applications that deal with the musical databases gained importance and demand for Music Information Retrieval (MIR) applications increased. Musical genres have no strict definitions and boundaries as they arise through a complex interaction between the public, marketing, historical, and cultural factors. This is Web Application that Classify Music in to genres.&lt;/p&gt;
+&lt;p&gt;Travelling companion is a type of object group, like swarm, convoy, flock, etc. As the objects move with respect to time, they leave their traces in the form of GPS locations. This gives rise to humongous spatio-temporal data which can be used in several domains of study like, social network applications, carpooling, scientific study of migratory birds, etc. The traditional DBSCAN algorithm as used in the Travelling Companion study has O(n^2) time complexity, which can be futile for streaming data. Our approach improved the time complexity to O(n log n), which is a huge improvement.&lt;/p&gt;
 
 &lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Django (1.11)&lt;/li&gt;
-  &lt;li&gt;Numpy (1.12.1)&lt;/li&gt;
-  &lt;li&gt;Scikit-Learn (0.18.1)&lt;/li&gt;
-  &lt;li&gt;Scipy (0.19.0)&lt;/li&gt;
-  &lt;li&gt;Python-Speech-Features (0.5)&lt;/li&gt;
-  &lt;li&gt;Pydub (0.18.0)&lt;/li&gt;
+  &lt;li&gt;Netbeans (8.1)&lt;/li&gt;
+  &lt;li&gt;Java (1.8)&lt;/li&gt;
+  &lt;li&gt;RAM (&amp;gt;= 4 GB)&lt;/li&gt;
+  &lt;li&gt;Processor (&amp;gt;= 2 Ghz)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/indrajithi/mgc-django.git&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python manage.py migrate&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python manage.py runserver&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;App will run on&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:8000&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h1 id=&quot;relatedwork&quot;&gt;Related_Work&lt;/h1&gt;
 
-&lt;h2 id=&quot;music-genre-classifier-app&quot;&gt;Music Genre Classifier App&lt;/h2&gt;
-&lt;p&gt;Our web application is written in Python using Django framework. It uses a trained &lt;code class=&quot;highlighter-rouge&quot;&gt;Poly Kernel SVM&lt;/code&gt; for finding the genre. Every HTTP request is first gone to the url dispatcher &lt;code class=&quot;highlighter-rouge&quot;&gt;urls.py&lt;/code&gt; which will contain a view present in &lt;code class=&quot;highlighter-rouge&quot;&gt;views.py&lt;/code&gt;. We can write rules in &lt;code class=&quot;highlighter-rouge&quot;&gt;views.py&lt;/code&gt; to handle each HTTP request on that url.
-    We have written views for HTTP POST and GET requests to upload music and find genre. There need to be models &lt;code class=&quot;highlighter-rouge&quot;&gt;(models.py)&lt;/code&gt; for files that we store in the database. The file is automatically deleted once we find the genre. 
-    Python objects can be saved in to the disk by using a module &lt;code class=&quot;highlighter-rouge&quot;&gt;Joblib&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn.externals&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;joblib.dump (object, filename)&lt;/code&gt;. Our trained classifier is saved in to the disk and loaded by &lt;code class=&quot;highlighter-rouge&quot;&gt;joblib.load(filename)&lt;/code&gt;. Since our training dataset is small, our classifier object does not need to be compressed. Our web application uses the package &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm&lt;/code&gt; which we developed to extract features and to find the genre label.&lt;/p&gt;
+&lt;p&gt;There have been many similar studies to cluster moving together object groups. Some of them are flock, convoy, gathering, swarm, etc. Flock 
+discovers a group of objects which are together for ‘k’ consecutive timestamps inside a disc of radius ‘r’. Convoy uses the density connectedness and has no restriction on shape and size. Swarm relaxes the constraint of clustering objects in consecutive timestamps. It can have non-consecutive timestamps. Gathering aims to find the coming together of certain objects for a particular time period.&lt;/p&gt;
 
-&lt;h2 id=&quot;architecture&quot;&gt;Architecture&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/arc.png&quot; alt=&quot;Architecture&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;problemdefinition&quot;&gt;Problem_Definition&lt;/h1&gt;
 
-&lt;h2 id=&quot;flow-chart&quot;&gt;Flow Chart&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/images/flowchart.png&quot; alt=&quot;Flow Chart&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;A sequence of snapshots s1,…,sn represent the trajectory data stream. Each snapshot has the spatial information of its constituent objects in the form of their latitudes and longitudes at a particular time. A snapshot can be represented as
+ s_i = {o_1, x_(1,i) , y_(1,i)},…, {o_n, x_(n,i), y_(n,i)},
+ where x_(j,i) , y_(j,i) are the spatial coordinates of object o_j at snapshot s_i.&lt;/p&gt;
 
-&lt;p&gt;The browser will send HTTP request as GET or POST from our Web App. GET request can be for loading templates which is an html file or for a static file, which includes front end JavaScript files (js), stylesheets (css), true type fonts(ttf) and image files. User upload the file by a HTTP POST. Our front end javascript will convert the given file as &lt;strong&gt;BLOB (binary large objects)&lt;/strong&gt; files of size 1MB before POST. After a successful POST, user can send a GET request for finding the genre label.&lt;/p&gt;
+&lt;p&gt;As soon as a snapshot arrives, the objective is to find a traveling companion.&lt;/p&gt;
 
-&lt;p&gt;We have developed a python package called &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm&lt;/code&gt; for extracting features and classifying music. This package is added to our Web App. On receiving a GET request for genre label, we convert the file to &lt;code class=&quot;highlighter-rouge&quot;&gt;.wav&lt;/code&gt; if it is in other format. Then the features are extracted from the audio file using &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm.feature.extract (filename)&lt;/code&gt;. Genre labels can be found by &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm.svm.getGenre(filename)&lt;/code&gt; function call. If multi option is selected by the user then &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm.svm.getMultiGenre(filename)&lt;/code&gt; function is called. This will get all the probabilities of a genres which the given music belongs to. If the probability is greater than 0.15, we will push the label into the stack of maximum size 3. The labels are sent as JSON data in the response. If single genre label is selected the label which is having highest probability is sent in response.&lt;/p&gt;
+&lt;p&gt;Definition 1 (Traveling Companion) Let S’ represents the size threshold and T’ represents the duration threshold, an object set ‘q’ is a traveling companion if:&lt;/p&gt;
 
-&lt;h2 id=&quot;prototypehttpsgithubcomindrajithimusic-genre-classification-matlab&quot;&gt;&lt;a href=&quot;https://github.com/indrajithi/music-genre-classification-matlab&quot;&gt;Prototype&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;(1) The constituents of ‘q’ are density-connected to each other for a period ‘t’ where t ≥ T’;
+(2) S’(q) ≥ S’.&lt;/p&gt;
 
-&lt;p&gt;We need to find the best classification algorithm that can be used in our Web App. Matlab is ideal to implement machine learning algorithms in minimum lines of code. Before making the Web App in python we made a prototype in Matlab.&lt;/p&gt;
+&lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
 
-&lt;h3 id=&quot;feature-extraction&quot;&gt;Feature Extraction&lt;/h3&gt;
+&lt;p&gt;Here is the Algorithmic representation of the work.&lt;/p&gt;
 
-&lt;p&gt;We chose to extract MFCC from the audio files as the feature. For finding MFCC in Matlab, we have used HTK MFCC MATLAB toolkit. The output will be a matrix of 13&lt;em&gt;n dimensional vector. Where n depends on the total duration of the audio. 13&lt;/em&gt;(100*sec).&lt;br /&gt;
-    While feature extraction we were getting ‘nan’(not a number) and infinity in the output. This is usually caused be a division by zero or a very small number closed to 0 resulting in infinity/nan in the output. This could be a regular result or some algorithm or implementation error in the MFCC toolkit. To overcome this situation, we have set nan or infinity entries in the feature array to 0.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Algo1.png&quot; alt=&quot;Algorithm&quot; title=&quot;Algorithm&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;principal-component-analysis&quot;&gt;Principal Component Analysis.&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/Algo2.png&quot; alt=&quot;Algorithm&quot; title=&quot;Algorithm&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components (or sometimes, principal modes of variation) [7]. After doing a PCA on the data we got 90% variance and should reduce the feature dimension.&lt;/p&gt;
+&lt;h3 id=&quot;experiments&quot;&gt;Experiments&lt;/h3&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eigvec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eigvalue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cumvar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cumsum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eigvalue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cumulative&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cumvarpercent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cumvar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cumvar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;dimensionality-reduction&quot;&gt;Dimensionality reduction&lt;/h3&gt;
-&lt;p&gt;Various researchers take statistics such as mean variance IQR, etc., to reduce the feature dimension. Some researchers model it using multivariate regression and some fit it to a Gaussian mixture model. Here we are taking the mean and upper diagonal variance of 13*n MFCC coefficients. The result is a feature vector of size 104.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt; &lt;span class=&quot;c1&quot;&gt;%Reducing Feature Dimeansion&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;mf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;%row mean&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;cf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cov&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;% covariance&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-     &lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;diag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)];&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;%use diagonals &lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
- &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(:,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;classification&quot;&gt;Classification&lt;/h3&gt;
-&lt;p&gt;#### K-nearest neighbors (KNN)
-Principle is that the data instance of the same class should be closer in the feature space.
-For a given data point x of unknown class, we can compute the distance between x and all
-the data points in the training data and assign the class determined by k nearest points of x.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-matlab&quot; data-lang=&quot;matlab&quot;&gt;&lt;span class=&quot;n&quot;&gt;Suppose&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;we&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;given&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;training&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;points&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;…&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Where&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;represents&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pair&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;xi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vector&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;yi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;target&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;class&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;For a new data point x the most likely class is determined by finding the distance from all training data points (Euclidian distance).  The output class will be the class which k nearest neighbors belongs to. K is a predefined integer (k=1, k=2, k=3.) 
-#### Logistic Regression&lt;/p&gt;
-
-&lt;p&gt;Logistic Regression is one of the widely used classification algorithm. This algorithm is used in medical as well as business fields for analytics and classification. This model has the hypothesis function  &lt;code class=&quot;highlighter-rouge&quot;&gt;0 ≤h  (x) ≤ 1.&lt;/code&gt; Where  &lt;code class=&quot;highlighter-rouge&quot;&gt;hθ(x) = 11 + e-θTx  &lt;/code&gt;called as Sigmoid or Logistic Function. For binary class classification&lt;code class=&quot;highlighter-rouge&quot;&gt; y ∈{0, 1}&lt;/code&gt;. The output of this classifier will be a probability of the given input belonging to class 1. If&lt;code class=&quot;highlighter-rouge&quot;&gt; hθ(x) &lt;/code&gt;outputs 0.7 it means that the given input has 70% chance of belonging to class 1.  Since we have 10 genre classes ` y ∈{0, 1 .. 9} `we used one-vs-all method for classification.&lt;/p&gt;
-
-&lt;h2 id=&quot;python-package-mysvm&quot;&gt;Python package &lt;em&gt;mysvm&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;We developed a python package called &lt;code class=&quot;highlighter-rouge&quot;&gt;mysvm&lt;/code&gt; which contains three modules: &lt;em&gt;features, svm, acc&lt;/em&gt;. These are used by the web application in feature extraction and finding genre. This package also contains many other functions to do complicated feature extraction and classification.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── acc.py
-├── data
-│   ├── classifier_10class.pkl
-│   ├── classifier_10class_prob.pkl
-│   ├── cmpr.pkl
-│   └── Xall.npy
-├── feature.py
-├── __init__.py
-├── svm.py
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;feature&quot;&gt;&lt;em&gt;feature&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;This module is used to extract MFCC features from a given file. It contains the following functions.
-* &lt;strong&gt;&lt;em&gt;extract (file):&lt;/em&gt;&lt;/strong&gt; 
-Extract features from a given file. Files in other formats are converted to .wav format. Returns numpy array.
-* &lt;strong&gt;&lt;em&gt;extract_all (audio_dir):&lt;/em&gt;&lt;/strong&gt; 
-Extracts features from all files in a directory. 
-* &lt;strong&gt;&lt;em&gt;extract_ratio (train_ratio, test_ratio, audio_dir) :&lt;/em&gt;&lt;/strong&gt; 
-Extract features from all files in a directory in a ratio. Returns two numpy arrays.
-* &lt;strong&gt;&lt;em&gt;geny(n):&lt;/em&gt;&lt;/strong&gt; 
-Generates &lt;code class=&quot;highlighter-rouge&quot;&gt;Y&lt;/code&gt; values for &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; classes. Returns numpy array.
-* &lt;strong&gt;&lt;em&gt;gen_suby(sub, n):&lt;/em&gt;&lt;/strong&gt;
-Generates &lt;code class=&quot;highlighter-rouge&quot;&gt;Y&lt;/code&gt; values for a subset of classes. Returns numpy array.
-* &lt;strong&gt;&lt;em&gt;gen_labels( ):&lt;/em&gt;&lt;/strong&gt;
-Returns a list of all genre labels.
-* &lt;strong&gt;&lt;em&gt;flattern( x) :&lt;/em&gt;&lt;/strong&gt;
-Flatterns a numpy array.&lt;/p&gt;
-
-&lt;h3 id=&quot;svm&quot;&gt;&lt;em&gt;svm&lt;/em&gt;&lt;/h3&gt;
-
-&lt;p&gt;A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. This module contains various functions for classification using support vector machines.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;poly(X,Y):&lt;/em&gt;&lt;/strong&gt; 
-Trains a poly kernel SVM by fitting X, Y dataset. Returns a trained poly kernel SVM classifier.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;fit ( training_percentage, fold):&lt;/em&gt;&lt;/strong&gt; 
-Randomly choose songs from the dataset, and train the classifier. Accepts parameter: &lt;code class=&quot;highlighter-rouge&quot;&gt;train_percentage, fold&lt;/code&gt;; Returns trained classifier.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;getprob (filename):&lt;/em&gt;&lt;/strong&gt;
-Find the probabilities for a song belongs to each genre. Returns a dictionary mapping genre names to probability and a list of top 3 genres which is having probability of more than 0.15.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;random_cross_validation (train_percentage,fold):&lt;/em&gt;&lt;/strong&gt;
-Randomly cross validate with training percentage and fold. Accepts parameter: &lt;code class=&quot;highlighter-rouge&quot;&gt;train_percentage, fold&lt;/code&gt;;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;findsubclass (class_count):&lt;/em&gt;&lt;/strong&gt;
-Returns all possible ways we can combine the classes. Accepts an integer as class count. Returns numpy array of all possible combination.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;gen_sub_data (class_l):&lt;/em&gt;&lt;/strong&gt;
-Generate a subset of the dataset for the given list of classes. Returns numpy array.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;fitsvm (Xall, Yall, class_l, train_percentage, fold):&lt;/em&gt;&lt;/strong&gt;
-Fits a poly kernel svm and returns the accuracy. Accepts parameter: &lt;code class=&quot;highlighter-rouge&quot;&gt;train_percentage; fold&lt;/code&gt;;  Returns: classifier, Accuracy.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;best_combinations (class_l, train_percentage, fold):&lt;/em&gt;&lt;/strong&gt;
-Finds all possible combination of classes and the accuracy for the given number of classes Accepts: Training percentage, and number of folds Returns: A List of best combination possible for given the class count.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;getgenre (filename):&lt;/em&gt;&lt;/strong&gt;
-Accepts a filename and returns a genre label for a given file.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;&lt;em&gt;getgenreMulti (filename):&lt;/em&gt;&lt;/strong&gt;
-Accepts a filename and returns top three genre labels based on the probability.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;acc&quot;&gt;&lt;em&gt;acc&lt;/em&gt;&lt;/h3&gt;
-&lt;p&gt;Module for finding the accuracy.
-* &lt;strong&gt;&lt;em&gt;get ( res, test ) :&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
-Compares two arrays and returns the accuracy of their match.&lt;/p&gt;
+&lt;p&gt;The experiments are performed on the Microsoft T-drive Taxi [9] dataset for a different number of objects. Trajectories were generated up to 5000 taxis. Three datasets D1 (500 objects), D2 (1000 objects) and D3 (5000 objects) are used for performance evaluation. The grid-based approach outperforms the buddy based companion discovery and shows very promising results with an order of reduction in time.&lt;/p&gt;
 
 &lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Classifier&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Training Accuracy&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Testing Accuracy&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;K-Nearest Neighbors&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;53%&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Logistic Regression&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;75.778%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;54%&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SVM Linear Kernel&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;99%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;52%&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;SVM RBF Kernel&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;99%&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;12%&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;SVM Poly Kernel&lt;/strong&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;99%&lt;/strong&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;64%&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;** 6 genre classes we are getting an accuracy of 85%**&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Results.png&quot; alt=&quot;Results&quot; title=&quot;Results&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;We have tried various machine learning algorithms for this project. Our aim is to get maximum accuracy. We have found from our research that we can a get maximum accuracy of &lt;code class=&quot;highlighter-rouge&quot;&gt;65%&lt;/code&gt; by using &lt;code class=&quot;highlighter-rouge&quot;&gt;poly kernel SVM&lt;/code&gt; for 10 genre classes. We have also tried to find the best combination of genre classes which will result in maximum accuracy. If we choose 6 genre classes we were able to get an accuracy of &lt;code class=&quot;highlighter-rouge&quot;&gt;85%&lt;/code&gt;. We chose these labels for the Web Application [classical, hip-hop, jazz, metal, pop and rock]
-For some songs we can say that it has feature of multiple genres. So we have also tried to get multiple label outputs based on the probability.&lt;/p&gt;
+&lt;p&gt;This work incorporates the grid-based clustering approach with the buddy-based companion discovery algorithm for finding traveling companions in streaming data. The O(n2) time complexity of clustering step in the traveling companion discovery is reduced to O(nlogn) by using the grid-based approach. The efficiency of the grid-based approach is evident by the experimental results on different datasets of varying size. This reduction in time is highly significant to meet the requirements of real life applications.&lt;/p&gt;
 
-&lt;h1 id=&quot;license&quot;&gt;License&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/indrajithi/mgc-django&quot;&gt;Source&lt;/a&gt; GPL v2.0, MIT. See LICENSE.txt&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/machine-learning-pproach-to-classify-music-based-on-genre/&quot;&gt;Machine Learning Aproach to Classify Music Based on Genre&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on July 29, 2017.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/Time_efficient_Disvovery_of_-moving_object_groups_from_Trajectory_data/&quot;&gt;Time efficient Disvovery of moving object groups from Trajectory data&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on July 29, 2017.&lt;/p&gt;
   </content>
 </entry>
 
 
 <entry>
-  <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 4]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/" />
-  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4</id>
-  <published>2016-05-26T14:12:04+05:30</published>
-  <updated>2016-05-26T14:12:04+05:30</updated>
+  <title type="html"><![CDATA[Machine Learning Algorithms for Recommender System - a comparative analysis]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/Machine_Learning_Algorithms_for_Recommender_System_a_comparative_analysis/" />
+  <id>http://localhost:4000/Machine_Learning_Algorithms_for_Recommender_System_a_comparative_analysis</id>
+  <published>2017-04-15T18:54:48+05:30</published>
+  <updated>2017-04-15T18:54:48+05:30</updated>
   <author>
     <name>Anand Nautiyal</name>
     <uri>http://localhost:4000</uri>
     <email>mail@indrajith.me</email>
   </author>
   <content type="html">
-    &lt;p&gt;We use &lt;code class=&quot;highlighter-rouge&quot;&gt;display()&lt;/code&gt; function to plot the spectrum in OpenGL. This function is called each time we fetch N/2 points 
-into the &lt;code class=&quot;highlighter-rouge&quot;&gt;graph[]&lt;/code&gt;.&lt;/p&gt;
+    &lt;h1 id=&quot;a-thorough-analysis-of-the-machine-learning-algorithms&quot;&gt;A thorough analysis of the Machine Learning Algorithms&lt;/h1&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glUseProgram&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glUniform1i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform_mytexture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glUniform1f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform_offset_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;offset_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glUniform1f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform_scale_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glClearColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glClear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_COLOR_BUFFER_BIT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;cm&quot;&gt;/* Set texture wrapping mode */&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glTexParameteri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_TEXTURE_WRAP_S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_CLAMP_TO_EDGE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_REPEAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;cm&quot;&gt;/* Set texture interpolation mode */&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glTexParameteri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_TEXTURE_MIN_FILTER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LINEAR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_NEAREST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glTexParameteri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_TEXTURE_MAG_FILTER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LINEAR&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_NEAREST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;cm&quot;&gt;/* Draw using the vertices in our vertex buffer object */&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glBindBuffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ARRAY_BUFFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glEnableVertexAttribArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_coord1d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glVertexAttribPointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_coord1d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_FLOAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;cm&quot;&gt;/* Draw the line */&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glDrawArrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_LINE_STRIP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;cm&quot;&gt;/* Draw points as well, if requested */&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;showpoints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glDrawArrays&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_POINTS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;checkEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		
-		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dataEnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glFlush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutSwapBuffers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glutSpecialFunc(special)&lt;/code&gt; calles the &lt;code class=&quot;highlighter-rouge&quot;&gt;void special(int key, int x, int y)&lt;/code&gt; function which is used to get the
-input F7,F8,F9 to toggle interpolation, clamping, and show points.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;special&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_F7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Interpolation is now %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;off&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_F8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Clamping is now %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;off&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_F9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;showpoints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;showpoints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Showing points is now %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;showpoints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;off&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_LEFT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asSeconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; 
-		&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_RIGHT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asSeconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; 
-		&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_UP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_DOWN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_HOME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLUT_KEY_F10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glutPostRedisplay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;We also use &lt;code class=&quot;highlighter-rouge&quot;&gt;glutKeyboardFunc(key)&lt;/code&gt; to get keyboard input. You can combine the above function with this if you want. 
-For the sake of simplicity I have used another function &lt;code class=&quot;highlighter-rouge&quot;&gt;key()&lt;/code&gt; to get keyboard input.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;p&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pause&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;m&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setVolume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setVolume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-			&lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;r&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//reload audio	
-&lt;/span&gt;		&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;&#39;q&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;OpenGL have a function called &lt;code class=&quot;highlighter-rouge&quot;&gt;glutIdleFunc()&lt;/code&gt; which loops and doesnot effect the display() function.
-We are creating a new function called &lt;code class=&quot;highlighter-rouge&quot;&gt;moveWav()&lt;/code&gt; to loop untill all the samples are fetched. This basically 
-calls &lt;code class=&quot;highlighter-rouge&quot;&gt;getData()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;display()&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;moveWav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glFlush&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutSwapBuffers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;compiling-and-running&quot;&gt;Compiling and running&lt;/h2&gt;
-
-&lt;p&gt;Create a file called &lt;code class=&quot;highlighter-rouge&quot;&gt;compile&lt;/code&gt; and add the following content.&lt;code class=&quot;highlighter-rouge&quot;&gt;mylib/lib&lt;/code&gt; is where aquila library is build.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
-g++ -std&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;c++11 -c draw.cpp 
-g++ -std&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;gnu++11 draw.o  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-kiss_fft130/kiss_fft.c  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--L /home/&amp;lt;username&amp;gt;/mylib/lib/ &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lAquila -lOoura_fft -lm &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lglut -lGLEW -lGL -lGLU  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lfreetype -lsfml-system &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lsfml-audio  ./common/shader_utils.o &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--o draw&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;After compiling type &lt;code class=&quot;highlighter-rouge&quot;&gt;./draw &amp;lt;audio&amp;gt;&lt;/code&gt; to run the visualizer.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-4/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 4&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 3]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/" />
-  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3</id>
-  <published>2016-05-26T12:59:15+05:30</published>
-  <updated>2016-05-26T12:59:15+05:30</updated>
-  <author>
-    <name>Anand Nautiyal</name>
-    <uri>http://localhost:4000</uri>
-    <email>mail@indrajith.me</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;We have to initialize the resources for OpenGL to plot the spectrum.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init_resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create_program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;graph.v.glsl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;graph.f.glsl&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;attribute_coord1d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_attrib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;coord1d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;uniform_offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;offset_x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;uniform_scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;scale_x&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;uniform_mytexture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;mytexture&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attribute_coord1d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_mytexture&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-
-	&lt;span class=&quot;c1&quot;&gt;//gets N/2 values in to graph
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;calledFromInit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calledFromInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;cm&quot;&gt;/* Upload the texture with our datapoints */&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glActiveTexture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glGenTextures&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;texture_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glBindTexture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;texture_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glTexImage2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LUMINANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2048&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LUMINANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_UNSIGNED_BYTE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Create the vertex buffer object
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glGenBuffers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glBindBuffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ARRAY_BUFFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Create an array with only x values.
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GLfloat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Fill it in just like an array
-&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;50.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Tell OpenGL to copy our array to the buffer object
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glBufferData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ARRAY_BUFFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_STATIC_DRAW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Enable point size control in vertex shader
-&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#ifndef GL_ES_VERSION_2_0
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glEnable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_VERTEX_PROGRAM_POINT_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#endif
-&lt;/span&gt;
-	&lt;span class=&quot;c1&quot;&gt;//return 1;
-&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1000000.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;iinit init_resources total time: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;secs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;getFft()&lt;/code&gt; is the function we use to apply &lt;em&gt;FFT&lt;/em&gt;. Lets create that function.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getFft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kiss_fft_cpx&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kiss_fft_cpx&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;kiss_fft_cfg&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cfg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
- 
-
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cfg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kiss_fft_alloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/*is_inverse_fft*/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;size_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;kiss_fft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cfg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;free&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cfg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;not enough memory?&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now lets create &lt;code class=&quot;highlighter-rouge&quot;&gt;getData()&lt;/code&gt; function which does all the work of getting N samples, applying window function,
-applying FFT and storing in an array &lt;code class=&quot;highlighter-rouge&quot;&gt;graph&lt;/code&gt; so that OpenGL can plot the points. &lt;code class=&quot;highlighter-rouge&quot;&gt;timestamp_t t0&lt;/code&gt; gets the current time. This will be useful to find the total execution time.&lt;/p&gt;
-
-&lt;p&gt;Input audio name is stored as &lt;code class=&quot;highlighter-rouge&quot;&gt;fileName&lt;/code&gt; to open it using &lt;em&gt;Aquila&lt;/em&gt; with the name we use &lt;code class=&quot;highlighter-rouge&quot;&gt;Aquila::WaveFile wav(fileName);&lt;/code&gt; . &lt;code class=&quot;highlighter-rouge&quot;&gt;mag[N/2]&lt;/code&gt; stores the magnitude values after applying FFT. &lt;code class=&quot;highlighter-rouge&quot;&gt;roof&lt;/code&gt; stores the total samples count.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	
-	&lt;span class=&quot;n&quot;&gt;Aquila&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WaveFile&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roof&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getSamplesCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Lets collect N samples from the audio input. Initialize &lt;code class=&quot;highlighter-rouge&quot;&gt;i = framePointer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;j = 0&lt;/code&gt;. Initially &lt;code class=&quot;highlighter-rouge&quot;&gt;framePointer&lt;/code&gt; value is zero. We will update the &lt;code class=&quot;highlighter-rouge&quot;&gt;framePointer&lt;/code&gt; when one frame is fetched. Iterate the loop to take &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; samplings
-until the &lt;code class=&quot;highlighter-rouge&quot;&gt;framePointer &amp;lt; roof -N&lt;/code&gt;. Note that &lt;code class=&quot;highlighter-rouge&quot;&gt;roof&lt;/code&gt; is the total sample count. &lt;code class=&quot;highlighter-rouge&quot;&gt;in[i].r&lt;/code&gt; is the real part and &lt;code class=&quot;highlighter-rouge&quot;&gt;in[j].i&lt;/code&gt; is the imaginary part. Since we don’t have any imaginary part in the samples we will set the imaginary part of the input to zero.&lt;/p&gt;
-
-&lt;p&gt;Apply Window Function on the input. We are using &lt;strong&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Hann_function&quot;&gt;Hann Window&lt;/a&gt;&lt;/strong&gt; function on the input.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//Get first N samples
-&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-					&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roof&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-
-		&lt;span class=&quot;c1&quot;&gt;//Apply window function on the sample
-&lt;/span&gt;		&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiplier&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;M_PI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)));&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiplier&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//stores N samples 
-&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Update the frame pointer if &lt;code class=&quot;highlighter-rouge&quot;&gt;framePointer &amp;lt; roof-N -1&lt;/code&gt;. Else print the values and exit.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roof&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		
-		&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;secs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1000000.0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;musicPlayingOffset&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-		
-		&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;musicSampleRate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getSampleRate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-		&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;musicLeftToPlay&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalMusicDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asMilliseconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;musicPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asMilliseconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;N = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Frame pointer &amp;gt; roof - N&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Framepointer = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Frames Left = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roof&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Total exec time: &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;secs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Total Music Played Duration = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;musicPlayingOffset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asMilliseconds&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Music left to play = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;musicLeftToPlay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;SFML Sample Rate = &quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;musicSampleRate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
-		
-		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now we have N samples with us, we need to apply &lt;em&gt;FFT&lt;/em&gt; on the samples. &lt;code class=&quot;highlighter-rouge&quot;&gt;getFft()&lt;/code&gt; is the function that we created to apply &lt;em&gt;FFT&lt;/em&gt;.  We then calculate magnitude of first n/2 FFT and store in &lt;code class=&quot;highlighter-rouge&quot;&gt;mag[N/2]&lt;/code&gt;. Optionally you can convert it into dB scale by &lt;code class=&quot;highlighter-rouge&quot;&gt;10 * log10(mag)&lt;/code&gt;. Log magnitude values are stored in &lt;code class=&quot;highlighter-rouge&quot;&gt;graph[]&lt;/code&gt; to plot the points.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;	&lt;span class=&quot;n&quot;&gt;getFft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// calculate magnitude of first n/2 FFT
-&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;mag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-	
-		&lt;span class=&quot;c1&quot;&gt;//	x =   10 * log10(mag[i]) ;
-&lt;/span&gt;	
-		&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;	
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now we can plot the points in &lt;code class=&quot;highlighter-rouge&quot;&gt;graph[]&lt;/code&gt; which we generated using OpenGL.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;calledFromInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	
-	&lt;span class=&quot;n&quot;&gt;glTexImage2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_TEXTURE_2D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LUMINANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2048&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_LUMINANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_UNSIGNED_BYTE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Create the vertex buffer object
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glGenBuffers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glBindBuffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ARRAY_BUFFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Create an array with only x values.
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GLfloat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Fill it in just like an array
-&lt;/span&gt;	&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;50.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Tell OpenGL to copy our array to the buffer object
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glBufferData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ARRAY_BUFFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sizeof&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GL_STATIC_DRAW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;c1&quot;&gt;// Enable point size control in vertex shader
-&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#ifndef GL_ES_VERSION_2_0
-&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;glEnable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_VERTEX_PROGRAM_POINT_SIZE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#endif
-&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/blog/music-visualizer-in-c-using-opengl-part-4/&quot;&gt;Part 4&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-3/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 3&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 26, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 2]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/" />
-  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2</id>
-  <published>2016-05-25T21:57:36+05:30</published>
-  <updated>2016-05-25T21:57:36+05:30</updated>
-  <author>
-    <name>Anand Nautiyal</name>
-    <uri>http://localhost:4000</uri>
-    <email>mail@indrajith.me</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;Now I assume that you have installed all the requirements needed for the visualizer. 
-If not read &lt;strong&gt;&lt;a href=&quot;/blog/music-visualizer-in-c-using-opengl-part-1/&quot;&gt;Part 1&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;We are using the graph from &lt;strong&gt;&lt;a href=&quot;https://en.wikibooks.org/wiki/OpenGL_Programming/Scientific_OpenGL_Tutorial_02&quot;&gt;OpenGL Programming/Scientific OpenGL Tutorial 02&lt;/a&gt;&lt;/strong&gt; for plotting the spectrum. Full source code for the graph is available &lt;a href=&quot;https://gitlab.com/wikibooks-opengl/modern-tutorials/tree/master/graph02&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Lets create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;draw.cpp&lt;/code&gt; and add a &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; function. We pass &lt;code class=&quot;highlighter-rouge&quot;&gt;.wav&lt;/code&gt; file as an argument.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Usage: wave_iteration &amp;lt;FILENAME&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;To play the music we are using &lt;strong&gt;SFML&lt;/strong&gt;. So lets write code for that.
-Before that we need to create an object &lt;code class=&quot;highlighter-rouge&quot;&gt;sf::Music music;&lt;/code&gt;. Add it to the global part.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt; &lt;span class=&quot;c1&quot;&gt;//sfm play music
-&lt;/span&gt;
- 	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;openFromFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-       		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
- 
- &lt;span class=&quot;c1&quot;&gt;// find the total music duration
-&lt;/span&gt; 	&lt;span class=&quot;n&quot;&gt;totalMusicDuration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getDuration&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Initializing the OpenGL. See this &lt;a href=&quot;https://en.wikibooks.org/wiki/OpenGL_Programming/Scientific_OpenGL_Tutorial_02&quot;&gt;tutorial&lt;/a&gt; for better understanding the graph used here.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;	&lt;span class=&quot;n&quot;&gt;glutInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutInitDisplayMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLUT_RGB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutInitWindowSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;480&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutCreateWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;My Graph&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLenum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glewInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLEW_OK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Error: %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glewGetErrorString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLEW_VERSION_2_0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No support for OpenGL 2.0 found&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glGetIntegerv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Your GPU does not have any vertex texture image units&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLfloat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glGetFloatv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ALIASED_POINT_SIZE_RANGE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;WARNING: point sprite range (%f, %f) too small&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-	&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now we need to get the points to plot. &lt;code class=&quot;highlighter-rouge&quot;&gt;getData()&lt;/code&gt; is the function we fetch to get N/2 
-points in to the array. &lt;code class=&quot;highlighter-rouge&quot;&gt;music.play()&lt;/code&gt; plays the music been loaded.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;	&lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now lets call some OpenGL function to plot the spectrum.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;glutDisplayFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutSpecialFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;special&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutIdleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moveWav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutKeyboardFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutMainLoop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;free_resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;visualizer.hpp&lt;/code&gt; and add the following codes.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt;
-#include &amp;lt;math.h&amp;gt;
-#include &amp;lt;GL/glew.h&amp;gt;
-#include &amp;lt;GL/glut.h&amp;gt;
-#include &quot;common/shader_utils.h&quot;
-#include &amp;lt;SFML/Audio.hpp&amp;gt;
-#include &quot;aquila/source/WaveFile.h&quot;
-#include &amp;lt;iostream&amp;gt;
-#include &amp;lt;functional&amp;gt;
-#include &amp;lt;memory&amp;gt;
-#include &amp;lt;chrono&amp;gt;
-#include &amp;lt;thread&amp;gt;
-#include &amp;lt;string.h&amp;gt;
-#include &amp;lt;sys/time.h&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//kissFFT
-&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;kiss_fft130/kiss_fft.h&quot;
-#ifndef M_PI
-#define M_PI 3.14159265358979324
-#endif&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;This completes the &lt;code class=&quot;highlighter-rouge&quot;&gt;main&lt;/code&gt; function. Here is the complete code for the function.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include &quot;visualizer.hpp&quot;
-&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#define N 10000
-&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;get_timestamp&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timeval&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;gettimeofday&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tv_usec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tv_sec&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;GLuint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attribute_coord1d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_offset_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_scale_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GLuint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;texture_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uniform_mytexture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;offset_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interpolate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clamp&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;showpoints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;GLuint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vbo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; 
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;framePointer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;calledFromInit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataEnd&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;muteFlag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalMusicDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Music&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;sf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timePlay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;kiss_fft_cpx&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;timestamp_t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[])&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Usage: wave_iteration &amp;lt;FILENAME&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;strcpy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;tmain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-   &lt;span class=&quot;c1&quot;&gt;//sfm play music
-&lt;/span&gt; 	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;openFromFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fileName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-       		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
-
-
-	&lt;span class=&quot;n&quot;&gt;totalMusicDuration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getDuration&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glutInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutInitDisplayMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLUT_RGB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutInitWindowSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;480&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;glutCreateWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;My Graph&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLenum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glewInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLEW_OK&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Error: %s&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;glewGetErrorString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;glew_status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLEW_VERSION_2_0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No support for OpenGL 2.0 found&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glGetIntegerv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_units&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Your GPU does not have any vertex texture image units&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;GLfloat&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;glGetFloatv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GL_ALIASED_POINT_SIZE_RANGE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;5.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;fprintf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stderr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;WARNING: point sprite range (%f, %f) too small&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-	
-	
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;------------------------------------------------------&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Use left/right to move horizontally.And seek audio by +/-5 sec&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Use up/down to change the horizontal scale.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press home to reset the position and scale.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press F7 to toggle interpolation.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press F8 to toggle clamping.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press F9 to toggle drawing points.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press q to exit.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press p to toggle Play/Pause audio.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Press r to reload and play audio.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;------------------------------------------------------&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-	
-	&lt;span class=&quot;n&quot;&gt;getData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;music&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;play&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init_resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-		&lt;span class=&quot;n&quot;&gt;glutDisplayFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutSpecialFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;special&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutIdleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;moveWav&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutKeyboardFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-		&lt;span class=&quot;n&quot;&gt;glutMainLoop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-	&lt;span class=&quot;n&quot;&gt;free_resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/blog/music-visualizer-in-c-using-opengl-part-3/&quot;&gt;» Part 3&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-2/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 2&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
-  </content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Music Visualizer in C++ Using OpenGL Part 1]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/" />
-  <id>http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1</id>
-  <published>2016-05-25T21:01:43+05:30</published>
-  <updated>2016-05-25T21:01:43+05:30</updated>
-  <author>
-    <name>Anand Nautiyal</name>
-    <uri>http://localhost:4000</uri>
-    <email>mail@indrajith.me</email>
-  </author>
-  <content type="html">
-    &lt;p&gt;&lt;img src=&quot;/images/spectrum.gif&quot; alt=&quot;Audio Visualizer&quot; title=&quot;Screenshot of spectrum&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;audio-visualizer&quot;&gt;Audio Visualizer&lt;/h1&gt;
-
-&lt;p&gt;For the given input audio file &lt;strong&gt;(.wav)&lt;/strong&gt; the program will give the &lt;strong&gt;real time audio spectrum&lt;/strong&gt; by performing &lt;strong&gt;Fast Fourier Transform (FFT)&lt;/strong&gt; on the audio samples and plot the graph using &lt;strong&gt;OpenGL&lt;/strong&gt;.
-This Project is implemented in C++ using OpenGL. Three frameworks &lt;strong&gt;Aquila-dsp&lt;/strong&gt;, &lt;strong&gt;Kiss-Fft&lt;/strong&gt;, and &lt;strong&gt;SFML&lt;/strong&gt; are used to perform audio sampling, fast fourier transform and audio playback respectively. The development and testing of this project is done on &lt;strong&gt;Linux (ubuntu)&lt;/strong&gt; using 4.2.0-16-generic Kernel. Interface for the program is given with the help of keyboard.&lt;/p&gt;
-
-&lt;h2 id=&quot;frameworks--apis-used&quot;&gt;Frameworks / APIs used&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;The following c++ frameworks are used in this project.
- 2 Simple and Fast Multimedia Library (SFML)&lt;/li&gt;
-  &lt;li&gt;Aquila-dsp&lt;/li&gt;
-  &lt;li&gt;Kiss-fft&lt;/li&gt;
-  &lt;li&gt;OpenGL&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;minimum-requirements&quot;&gt;Minimum requirements:&lt;/h2&gt;
-&lt;p&gt;The development of the project was done with these requirements. The can support lower versions also. It has not been tested.&lt;/p&gt;
+&lt;h3 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;C++ compiler : g++ with c++11 support (-std=gnu++11) (version &amp;gt;= 5.2.1)&lt;/li&gt;
-  &lt;li&gt;OpenGL (version &amp;gt;=v4.5)&lt;/li&gt;
-  &lt;li&gt;Aquila-dsp framework (version &amp;gt;=v3.0)&lt;/li&gt;
-  &lt;li&gt;Kiss-fft Framework (version &amp;gt;=v1.3.0)&lt;/li&gt;
-  &lt;li&gt;SFML framework  &amp;gt;=2.3.2&lt;/li&gt;
-  &lt;li&gt;Git &amp;gt;=v2.5.0&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#algorithms&quot;&gt;Algorithms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#results&quot;&gt;Results&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;keys-used&quot;&gt;Keys Used:&lt;/h2&gt;
+&lt;p&gt;Recommendation system is one of the most popular applications of Artificial Intelligence which attracts many researchers all over the globe. The advent of the Internet era has brought wide implementation of recommendation system in our everyday lives. There are many machine learning techniques which can be used to realize the recommendation system. Among all these techniques we are dealing with Content Based Filtering, Collaborative Based Filtering, Hybrid Content-Collaborative Based Filtering, k-mean clustering and Naive Bayes classifier. We have exploited these algorithms to their extreme in order to achieve the best possible precision and have presented a comprehensive comparative analysis. The strength of all these algorithms can be clearly realized by the significant enhancement in the accuracy, depicted by the experimental analysis taking cold start problem into consideration.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Use `Left/Right` to move horizontally.
-        Use `Up/Down` to change the horizontal scale.
-        Use `Home` button to reset the position and scale.
-        Press ` F7 ` to toggle interpolation.
-        Press  `F8` to toggle clamping.
-Press `F9` to toggle drawing points.
-        Press `q` to exit the program.
-        Press `p` to to toggle audio play/pause.
-        Press `r` to reload audio and play from the beginning.    
-Press `right arrow` to seek audio forward by 5 seconds and move +ve x axis.
-Press `left arrow` to seek audio backward by 5 seconds and move -ve x axis.
-Press `down arrow` to decrease scale/1.5.
-Press `up arrow` to increase scale*1.5.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
-&lt;h2 id=&quot;algorithm&quot;&gt;Algorithm&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Netbeans (8.1)&lt;/li&gt;
+  &lt;li&gt;Java (1.8)&lt;/li&gt;
+  &lt;li&gt;RAM (&amp;gt;= 4 GB)&lt;/li&gt;
+  &lt;li&gt;Processor (&amp;gt;= 2 Ghz)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Step 1: Begin
-		Int framePointer = 0, N = 32768.
-Step 2: Load input audio file and play it using the audio Library
-Step 3: For i = framePointer to →  framePointer + N &amp;lt; total_samples_count
-		Collect N samples from the audio file 
-Step 4: Apply suitable window function (e.g. Hann aka Hanning window)
-Step 5: Apply Fast Fourier transform (FFT) on the array elements and collect N/2 
-		Complex numbers having real part and imaginary part. 
-		(NB: if using typical complex-to-complex FFT then set imaginary parts 
-		of input array to zero)
-Step 6: Calculate the magnitude of N/2FFT data.
-		magnitude = sqrt(re * re +img *img) 
-Step 7: Convert magnitude to dB (log)scale. (optional)
-		20 * log10(magnitude)
-Step 8: Plot N/2  log(magnitude)values.
-Step 9: If N &amp;gt;= total_samples_count 
-        Exit. 
-        Else goto Step 3.
-Step 10: End.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;algorithms&quot;&gt;Algorithms&lt;/h3&gt;
 
-&lt;h2 id=&quot;flow-chart&quot;&gt;Flow Chart&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/flowchart.png&quot; alt=&quot;Flow Chart&quot; title=&quot;Flowchart&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;1) Content Based Filtering&lt;/p&gt;
 
-&lt;h2 id=&quot;compiling-the-frameworks&quot;&gt;Compiling the frameworks&lt;/h2&gt;
+&lt;p&gt;The Content Based Filtering considers the items rated by a user to formulate the future recommendations while exploring the internet services. A user tends to rate an item which he likes or dislikes. His ratings reflect his response towards that item. If he likes an item, he rates it higher and lesser ratings denote that he is not much interested. These rated items serve as the ‘content’ in the Content Based Filtering. Based on this content, the user is recommended future items which he might approve of. Here, the user is recommended movies which fall in a particular
+genre of his liking.&lt;/p&gt;
 
-&lt;h2 id=&quot;aquila-dsp&quot;&gt;Aquila-dsp:&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Following Algorithm describes the idea.&lt;/p&gt;
 
-&lt;p&gt;CMake: Aquila relies on CMake as a build tool, so make sure you have it installed (version 2.8 or later)
-Clone repository.&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-content&quot; data-lang=&quot;content&quot;&gt;Input: users X, movies m, rating r, movie genre m g , Number of movies to be recommended(μ).
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git://github.com/zsiciarz/aquila.git aquila-src
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Buid&lt;/strong&gt;&lt;/p&gt;
+Output: Recommended movies R
 
-&lt;p&gt;Where to build:&lt;/p&gt;
+1. for all users do
+2. Select seen movies s, unseen movies s&#39;, association
+of unseen movies as_i&#39; w.r.t X, association of each 
+genre ag_j w.r.t s&#39; , where i is 1 to n and j is 1 to m.
+3. Calculate score_j .
+4. Select highest three score_j
+5. Select m&#39; ⊂ s&#39; according to highest three score_j
+6. Calculate score m_e&#39; where e ∈ m&#39; 
+7. Return top μ score recommendations.
+8. end for&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a-top-level-directory/
-   aquila-build/
-   aquila-src/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;In directory you have to build do&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-conten1&quot; data-lang=&quot;conten1&quot;&gt;In this algorithm, the notations used have the following meaning :
+association of each movie as_i represents total number of users who rated movie i Є s&#39;;
+association of each genre ag_j represents total number of movie belonging to genre j.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake ..\aquila-src
-    -DCMAKE_INSTALL_PREFIX=”~/home/mylib”
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;SFLM:&lt;/strong&gt;&lt;/p&gt;
+score_j = ag_j / m
+score(m_e&#39;) = am_e / total count of m&#39;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Installing SFML is simple. You need administrative privilege on the machine&lt;/p&gt;
+&lt;p&gt;2) Collaborative Filtering&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libsfml-dev
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Kiss FFT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There can be many users who must be having the same pattern of rating an item as the user intended. This similar pattern of their ratings with the user guides the Collaborative Filtering. The notion behind the Collaborative Filtering is the recommendation of an item based on the
+preferences of like-minded users.&lt;/p&gt;
 
-&lt;p&gt;There is no need to build kiss-fft. You need to add their files while compiling&lt;/p&gt;
+&lt;p&gt;The Algorithm used for the implementation is given below :&lt;/p&gt;
 
-&lt;h2 id=&quot;compiling-and-running&quot;&gt;Compiling and running&lt;/h2&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-collaborative&quot; data-lang=&quot;collaborative&quot;&gt;Input: users X, movies m, rating r, Number of movies to be recommended(μ).
 
-&lt;p&gt;For easy compilation use the script &lt;code class=&quot;highlighter-rouge&quot;&gt;./compile&lt;/code&gt; from the project directory&lt;/p&gt;
+Output: Recommended movies R.
+1. for all users do
+2. Select seen movies s, unseen movies s&#39;
+3. Find similarity (sim_i ) w.r.t s, where i = 1 to n.
+4. Select highest sim_i user
+5. Select m&#39; Є s of user obtained in step 4 and s&#39; of i_th user.
+6. Calculate weight W(m_e &#39;) where e Є m&#39;
+7. Return top μ weight recommendations.
+8. end for&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;g++ -std&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;c++11 -c draw.cpp
-g++ -std&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;gnu++11 draw.o  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-kiss_fft130/kiss_fft.c  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--L /home/&amp;lt;YourUserName&amp;gt;/mylib/lib/ &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lAquila -lOoura_fft -lm &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lglut -lGLEW -lGL -lGLU  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lfreetype -lsfml-system &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--lsfml-audio  ./common/shader_utils.o &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
--o draw
-To run the project: 
-./draw &amp;lt;audio-input&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-collaborative1&quot; data-lang=&quot;collaborative1&quot;&gt;In this algorithm, the notations used have the following meaning :
+sim_i represents common movies between user i and other users.
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;/blog/music-visualizer-in-c-using-opengl-part-2/&quot;&gt;» Part 2&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+weight(m e &#39;)= rating of particular movie e / max rating.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/indrajithi/Audio-Visualizer&quot;&gt;Full Source Code.&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;3) Hybrid Filtering&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/blog/music-visualizer-in-c-using-opengl-part-1/&quot;&gt;Music Visualizer in C++ Using OpenGL Part 1&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on May 25, 2016.&lt;/p&gt;
-  </content>
-</entry>
+&lt;p&gt;To cater better precision, a hybrid filtering method is used which can provide the advantages of both the content and the collaborative approaches and can overcome their shortcomings. Suppose, the user appreciates mostly movies in g ⊂ G genres, and the collaborating users also give high ratings to the g ⊂ G genres, then g will be taken as the metric to recommend movies to the user.&lt;/p&gt;
 
+&lt;p&gt;The algorithm for Hybrid Filtering has been used as :&lt;/p&gt;
 
-<entry>
-  <title type="html"><![CDATA[Jumble Words solver using Python.]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/jumble_words_solver_in_python/" />
-  <id>http://localhost:4000/jumble_words_solver_in_python</id>
-  <published>2016-04-15T18:54:48+05:30</published>
-  <updated>2016-04-15T18:54:48+05:30</updated>
-  <author>
-    <name>Anand Nautiyal</name>
-    <uri>http://localhost:4000</uri>
-    <email>mail@indrajith.me</email>
-  </author>
-  <content type="html">
-    &lt;h2 id=&quot;download-the-dictionary&quot;&gt;Download the Dictionary&lt;/h2&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-hybrid&quot; data-lang=&quot;hybrid&quot;&gt;Input: users X, movies m, rating r, movie genre m g , Number of movies to be recommended(μ).
 
-&lt;p&gt;First you have to download the dictionary ‘words.txt’
-&lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/indrajithi/anargam/blob/master/words.txt&lt;/code&gt;&lt;/p&gt;
+Output: Recommended movies R.
 
-&lt;h2 id=&quot;open-the-dictionary-file-in-python&quot;&gt;Open the dictionary file in python&lt;/h2&gt;
+1. for all users do
+2. Select seen movies s, unseen movies s&#39;, association of each genre ag_j w.r.t s&#39;, where i is 1 to n and j is 1 to m.
+3. Calculate score_j .
+4. Select highest three score_j
+5. Select m&#39;&#39; Є s of the i_th user according to highest three score_j
+6. Find similarity (sim_j ) w.r.t m&#39;&#39;
+7. Select highest sim_j user.
+8. Select m&#39; according to its highest three score_j Є s of user obtained in step 7 and s&#39; of the i_th user under consideration.
+9. Calculate weight W(m_e&#39;) where e Є m&#39;
+10. Return top μ weight recommendations.
+11. end for&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Create a file called anargam.py and the add the following.&lt;/p&gt;
+&lt;p&gt;4) K-Mean Clustering&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;words.txt&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;wd_in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;enter a jumbled word: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;The k-mean is a non parametric classification technique. It distributes the items into k clusters according to their proximity to one another. In this paper, this proximity is being measured by using the Euclidean distance. For calculating the Euclidean distance we have taken rated and unrated movies as binary. Each cluster possesses a centroid which is the mean of all the items in the cluster. All the objects in a cluster move
+towards the centroid and the centroid is updated in each iteration. The iteration continues until a saturation point arrives, when the centroid stops altering. By following this approach we are decreasing the search space which results in reduced computational complexity. These computations are performed off-line which helps the classification to be efficient in terms of time complexity.&lt;/p&gt;
 
-&lt;h2 id=&quot;function-anargam&quot;&gt;Function anargam&lt;/h2&gt;
-&lt;p&gt;Now lets define a function &lt;code class=&quot;highlighter-rouge&quot;&gt;is_anargam()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The K-means clustering Algorithm is given as :&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_anargam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
- 
-    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Returns True if anargam is found. Else return False.&quot;&quot;&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;     
-          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;               
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-               &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-kmeans&quot; data-lang=&quot;kmeans&quot;&gt;Input: users X, movies m, rating r, Number of movies to be recommended μ, value of k.
 
-&lt;h2 id=&quot;call-the-anargam-function&quot;&gt;Call the anargam function&lt;/h2&gt;
+Output: Recommended movie R.
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_anargam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wd_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-               &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;The possible anargams are:&quot;&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-          
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No possible mathch&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Found &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d match.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;
+1. begin
+2. Randomly select k centroids.
+3. Calculate euclidean distance (eucd) for X from k centroids.
+4. Allocate X to k_th cluster according to eucd.
+5. Update centroid for each cluster with (summation(k_i) from 1 to p)/p, where p is the number of members in k_i cluster
+6. Repeat step 3 to step 5 until centroid(t) ≠ centroid (t+1).
+7. for all users do
+8. Select seen movies s, unseen movies s&#39;.
+9. Find similarity (sim_i ) w.r.t s, where i = 1 to p.
+10. Select highest sim_i user.
+11. select m&#39; ⊂ s of highest sim_i and s&#39; of i_th user.
+12. Calculate weight W(m_e&#39;) where e Є m&#39;
+13. Return top μ weight recommendations.
+14. end for
+15. end&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;5) Naive Bayes&lt;/p&gt;
 
-&lt;h2 id=&quot;complete-code&quot;&gt;Complete code&lt;/h2&gt;
+&lt;p&gt;The Naive Bayes is based on the Bayes theorem. The probabilistic approach followed by Naive Bayes Classifier determines the probability of the classification and helps in finding the uncertainty about the model. It is an efficient learning algorithm which uses the prior knowledge of the
+observed data. The Naive assumption is that the features are conditionally independent.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/indrajithi/anargam&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The algorithm used is given below :&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_anargam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Returns True if anargam is found. Else return False.&quot;&quot;&quot;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;     
-          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;word2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                    &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;               
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-               &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
-  
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-kmeans&quot; data-lang=&quot;kmeans&quot;&gt;Input: users X, movies m, rating r, Number of movies to be recommended μ, value of k.
 
-&lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;words.txt&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;wd_in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;enter a jumbled word: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+Output: Recommended movie R.
 
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_anargam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wd_in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()):&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-               &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;The possible anargams are:&quot;&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-          
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;No possible mathch&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
-     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Found &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d match.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;found&lt;/span&gt;
- &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+Input: users X, movies m, rating r, number of movies to be recommended(μ)
+
+Output: Recommended movies R.
+
+1. for all users do
+2. Select seen movies s, unseen movies s&#39; .
+3. Find similarity (sim_i) w.r.t s, where i = 1 to n.
+4. Select x&#39;⊂ X where sim_i &amp;gt; 10.
+5. Calculate association of unseen movies as i&#39; w.r.t to x&#39;
+6. Calculate score (s_e &#39;) where e Є s&#39;.
+7. Return top μ score recommendations.
+8. end for&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;We now illustrate the analysis of the experiments performed and provide a comparison of all the state-of-the-art methods described above. To compare their accuracy we have used the MovieLens dataset of 10K, 50K and 100K. The dataset varies in sparsity. For example, the 100K MovieLens dataset has 100K ratings, 943 users and 1682 movies of 19 different genres. The analysis of these algorithms is demonstrated based on precision measure. For each test user, we convert 30% of the user’s seen movies into unseen movies and apply the algorithms described above. Out of the total number of recommendations (T), the ones which are also present in the converted movies are the correct recommendations(tc).&lt;/p&gt;
+
+&lt;p&gt;Precision = (Σ tc / Σ T) * 100
+For all the experiments, we are taking value of μ = 5 and value of k = 10.&lt;/p&gt;
+
+&lt;p&gt;The table below shows the precision of these algorithms as calculated.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/precision_table.png&quot; alt=&quot;Precision&quot; title=&quot;Precision&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The results obtained can be visualized by the following figure :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/precision_diagram.png&quot; alt=&quot;PrecisionDiagram&quot; title=&quot;PrecisionDiagram&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;All the algorithms described in this paper are compared with respect to their precision rates. This comprehensive analysis depicts the strength and the weakness of each one of them in different versions of the MovieLens dataset. The experiments performed are the witness of the sparsity handling by these algorithms. Our experiments have shown promising results and this paper conforms that out of all these approaches Naive
+Bayes gives the best precision.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/jumble_words_solver_in_python/&quot;&gt;Jumble Words solver using Python.&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on April 15, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/Machine_Learning_Algorithms_for_Recommender_System_a_comparative_analysis/&quot;&gt;Machine Learning Algorithms for Recommender System - a comparative analysis&lt;/a&gt; was originally published by Anand Nautiyal at &lt;a href=&quot;http://localhost:4000&quot;&gt;Anand's Blog&lt;/a&gt; on April 15, 2017.&lt;/p&gt;
   </content>
 </entry>
 
