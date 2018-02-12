@@ -6,8 +6,8 @@ description: My Experiments With Computer.
 #logo: site-logo.png
 logo : Anand.jpg
 search: true
-#url: http://AnandNautiyal23.github.io
-url: http://localhost:4000
+url: http://AnandNautiyal23.github.io
+#url: http://localhost:4000
 
 
 # Jekyll configuration
