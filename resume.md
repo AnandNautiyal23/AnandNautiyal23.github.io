@@ -19,5 +19,5 @@ image:
 
 <div class="center">
 <h3>View Resume</h3>
-<a markdown="0" href="https://github.com/AnandNautiyal23.me/Resume/blob/master/resume.pdf" class="btn">PDF</a>
+<a markdown="0" href="https://github.com/AnandNautiyal23/AnandNautiyal23.github.io/raw/master/resume/resume_anand_nautiyal.pdf" class="btn">PDF</a>
 </div>

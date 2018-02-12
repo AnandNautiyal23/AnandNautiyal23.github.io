@@ -37,4 +37,4 @@ We implemented several machine learning algorithms like K-means clustering, Naiv
 ### Discernibility matrix Construction & Johnson's Reduct — *A Rough Computing Project*
 This project involved the construction of discernibility matrix using Johnson's Reduct method. The project was tested on wine and car dataset available at UCI Machine Learning Repository.
 
- <a markdown="0" href="http://indrajith.me/resume" class="btn">Resume</a>
+ <a markdown="0" href="http://anandnautiyal.me/resume" class="btn">Resume</a>

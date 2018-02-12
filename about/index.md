@@ -14,4 +14,4 @@ I am Anand Nautiyal. I am a data scientist. This blog contains a detailed descri
 You can reach me on my email `mail[@]AnandNautiyal23.me`
 
 
-<a markdown="0" href="http://AnandNautiyal23.me/portfolio" class="btn">Portfolio</a> <a markdown="0" href="http://AnandNautiyal23.me/resume" class="btn">Resume</a>
+<a markdown="0" href="http://anandnautiyal.me/portfolio" class="btn">Portfolio</a> <a markdown="0" href="http://anandnautiyal.me/resume" class="btn">Resume</a>
