@@ -24,6 +24,7 @@ Travelling Companion Problem
 - [Experiments](#experiments)
 - [Results](#results)
 - [Conclusion](#conclusion)
+- [Full Source Code](#FullSourceCode)
 
 
 Travelling companion is a type of object group, like swarm, convoy, flock, etc. As the objects move with respect to time, they leave their traces in the form of GPS locations. This gives rise to humongous spatio-temporal data which can be used in several domains of study like, social network applications, carpooling, scientific study of migratory birds, etc. The traditional DBSCAN algorithm as used in the Travelling Companion study has O(n^2) time complexity, which can be futile for streaming data. Our approach improved the time complexity to O(n log n), which is a huge improvement. 
@@ -77,3 +78,9 @@ Results
 ## Conclusion
 
 This work incorporates the grid-based clustering approach with the buddy-based companion discovery algorithm for finding traveling companions in streaming data. The O(n2) time complexity of clustering step in the traveling companion discovery is reduced to O(nlogn) by using the grid-based approach. The efficiency of the grid-based approach is evident by the experimental results on different datasets of varying size. This reduction in time is highly significant to meet the requirements of real life applications.
+
+## Full Source Code
+
+The Full Java Code can be viewed at [Full Source Code](https://github.com/AnandNautiyal23/Time_efficient_travelling_companion)
+
+

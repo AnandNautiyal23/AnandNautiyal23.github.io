@@ -1,0 +1,144 @@
+
+*** Modified files in JOE when it aborted on Thu Mar  8 17:49:29 2018
+*** JOE was aborted because the terminal closed
+
+*** Modified files in JOE when it aborted on Thu Mar  8 17:50:41 2018
+*** JOE was aborted because the terminal closed
+
+*** File '/home/spineor/Documents/AnandNautiyal_github_site/AnandNautiyal23.github.io/.git/COMMIT_EDITMSG'
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_fill-parent.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_grid.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_media.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_omega.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_outer-container.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_pad.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_private.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_reset.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_row.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_shift.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_span-columns.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_to-deprecate.scssc
+#	new file:   .sass-cache/02201a6bee4c341014561a73f2fabc40144acf81/_visual-grid.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_animated.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_bordered-pulled.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_core.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_fixed-width.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_icons.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_larger.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_list.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_mixins.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_path.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_rotated-flipped.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_stacked.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/_variables.scssc
+#	new file:   .sass-cache/060b74340cdc3db8b2fb34c00fb0e1ea91303dc5/font-awesome.scssc
+#	new file:   .sass-cache/1db751df523cf75114f2591106d10715ae957bb6/_grid.scssc
+#	new file:   .sass-cache/1db751df523cf75114f2591106d10715ae957bb6/_visual-grid.scssc
+#	new file:   .sass-cache/2025be4b6b2c5a5ec86539c03426f19e0728ea52/_new-breakpoint.scssc
+#	new file:   .sass-cache/2025be4b6b2c5a5ec86539c03426f19e0728ea52/_private.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_button.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_clearfix.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_directional-values.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_ellipsis.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_font-family.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_hide-text.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_html5-input-types.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_position.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_prefixer.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_retina-image.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_size.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_timing-functions.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_triangle.scssc
+#	new file:   .sass-cache/3e86858bf856a1d2d66418c0730e780fe968dcc6/_word-wrap.scssc
+#	new file:   .sass-cache/63ae6510d13beab23dbdabcf67e71aee0111df2c/_bourbon-deprecated-upcoming.scssc
+#	new file:   .sass-cache/63ae6510d13beab23dbdabcf67e71aee0111df2c/_bourbon.scssc
+#	new file:   .sass-cache/6bf811e3f7b481d5d899a09210a2fe1363b8284f/_prefixer.scssc
+#	new file:   .sass-cache/6bf811e3f7b481d5d899a09210a2fe1363b8284f/_px-to-em.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_animation.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_appearance.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_backface-visibility.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_background-image.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_background.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_border-image.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_border-radius.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_box-sizing.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_calc.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_columns.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_filter.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_flex-box.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_font-face.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_font-feature-settings.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_hidpi-media-query.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_hyphens.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_image-rendering.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_keyframes.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_linear-gradient.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_perspective.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_placeholder.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_radial-gradient.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_transform.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_transition.scssc
+#	new file:   .sass-cache/77dbe90002e0536e29d6abd32e95f2c18a4b1907/_user-select.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_animations.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_archives.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_base.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_buttons.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_footer.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_forms.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_grid-settings.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_helpers.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_masthead.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_mixins.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_navigation.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_notices.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_page.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_reset.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_search.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_syntax.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_variables.scssc
+#	new file:   .sass-cache/af96205ee5c2219b46a3487e02fc26985e7b9cd6/_wells.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_assign.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_color-lightness.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_flex-grid.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_golden-ratio.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_grid-width.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_modular-scale.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_px-to-em.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_px-to-rem.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_strip-units.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_tint-shade.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_transition-property-name.scssc
+#	new file:   .sass-cache/c8df7c9b07bcf1322a54551c6ffd1e127eeb6bab/_unpack.scssc
+#	new file:   .sass-cache/ce6e645ee6809e3be6edd7119a3ddd840db799c6/_neat-helpers.scssc
+#	new file:   .sass-cache/ce6e645ee6809e3be6edd7119a3ddd840db799c6/_neat.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_convert-units.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_gradient-positions-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_is-num.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_linear-angle-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_linear-gradient-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_linear-positions-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_linear-side-corner-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_radial-arg-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_radial-gradient-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_radial-positions-parser.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_render-gradients.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_shape-size-stripper.scssc
+#	new file:   .sass-cache/dd556b054470780ca1aaa733d9183cd5fa970e9a/_str-to-num.scssc
+#	new file:   .sass-cache/f2dedc5e9f5e2b9ef85256f5d64e53af5603a2d5/_settings.scssc
+#	new file:   .sass-cache/f2dedc5e9f5e2b9ef85256f5d64e53af5603a2d5/magnific-popup.scssc
+#	new file:   Academia.md
+#	new file:   DEADJOE
+#	modified:   _config.yml
+#	modified:   _data/navigation.yml
+#	modified:   _posts/2017-07-29-Time_efficient_Disvovery_of_ moving_object_groups_from_Trajectory_data.md
+#	modified:   about/index.md
+#	deleted:    images/Anand.jpg
+#	new file:   images/Anand.png
+#
